@@ -1,0 +1,98 @@
+@page
+@using GraphWebProject.Pages
+@model IndexModel
+
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>GRAPH</title>
+    <meta name="Umbetov Asman" content="GRAPH project">
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="~/css/styles.css">
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Faster+One|Fjalla+One" rel="stylesheet">
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+<body class="bg-light">
+<div class="container">
+    <div class="bg-light page-header">
+        <h1>Graph Project</h1>
+        <p>This project will allow you to learn graph structures the easiest way</p>
+    </div>
+</div>
+
+
+<div class="row bg-light">
+    <svg class="bg-white" width="1000" height="500"></svg>
+</div>
+<div class="row">
+<<div class="container bg-light">
+  <h2>Actions</h2>
+  <button type="button" class="btn btn-primary" id="graph1">Graph Example #1</button>
+  <button type="button" class="btn btn-primary" id="graph2">Graph Example #2</button>
+  <button type="button" class="btn btn-primary">Graph Example #3</button>
+  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Add Node</button>
+  <button type="button" class="btn btn-danger">Delete Node</button>
+  <button type="button" class="btn btn-info">Info</button>
+</div>
+</div>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="~/js/layout.js"></script>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Add Node</h4>
+      </div>
+      <div class="modal-body">
+
+          <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Example select</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect2">Example multiple select</label>
+                <select multiple class="form-control" id="exampleFormControlSelect2">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

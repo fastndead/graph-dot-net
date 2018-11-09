@@ -1,0 +1,11 @@
+/Users/ASMANandNASTYA/Projects/GraphWebProject/GraphWebProject/bin/Debug/netcoreapp2.0/GraphWebProject.deps.json
+/Users/ASMANandNASTYA/Projects/GraphWebProject/GraphWebProject/bin/Debug/netcoreapp2.0/GraphWebProject.runtimeconfig.json
+/Users/ASMANandNASTYA/Projects/GraphWebProject/GraphWebProject/bin/Debug/netcoreapp2.0/GraphWebProject.runtimeconfig.dev.json
+/Users/ASMANandNASTYA/Projects/GraphWebProject/GraphWebProject/bin/Debug/netcoreapp2.0/GraphWebProject.dll
+/Users/ASMANandNASTYA/Projects/GraphWebProject/GraphWebProject/bin/Debug/netcoreapp2.0/GraphWebProject.pdb
+/Users/ASMANandNASTYA/Projects/GraphWebProject/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.csproj.CoreCompileInputs.cache
+/Users/ASMANandNASTYA/Projects/GraphWebProject/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.AssemblyInfoInputs.cache
+/Users/ASMANandNASTYA/Projects/GraphWebProject/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.AssemblyInfo.cs
+/Users/ASMANandNASTYA/Projects/GraphWebProject/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.dll
+/Users/ASMANandNASTYA/Projects/GraphWebProject/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.pdb
+/Users/ASMANandNASTYA/Projects/GraphWebProject/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.csprojAssemblyReference.cache
