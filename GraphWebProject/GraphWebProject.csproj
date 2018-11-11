@@ -8,11 +8,13 @@
         <Folder Include="wwwroot\" />
         <Folder Include="wwwroot\css" />
         <Folder Include="wwwroot\js" />
-        <Folder Include="wwwroot\json" />
     </ItemGroup>
 
     <ItemGroup>
+        <PackageReference Include="EntityFramework" Version="6.2.0" />
         <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+        <PackageReference Include="Npgsql" Version="4.0.3" />
+        <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
     </ItemGroup>
 
 </Project>

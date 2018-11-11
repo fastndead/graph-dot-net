@@ -9,3 +9,4 @@
 /Users/ASMANandNASTYA/Projects/GraphWebProject/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.dll
 /Users/ASMANandNASTYA/Projects/GraphWebProject/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.pdb
 /Users/ASMANandNASTYA/Projects/GraphWebProject/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.csprojAssemblyReference.cache
+/Users/ASMANandNASTYA/Projects/GraphWebProject/GraphWebProject/bin/Debug/netcoreapp2.0/GraphWebProject.dll.config

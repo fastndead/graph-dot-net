@@ -1,9 +1,16 @@
 
 svg{
     box-shadow: 0px 0px 30px black;
-    margin: 30px auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
     align-self: center;
 }
+
+button{
+    margin-bottom: 10px!important;
+}
+
 /* D3 SAMPLE CSS BEGIN*/
 .links line {
   stroke: #999;

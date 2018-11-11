@@ -7,17 +7,21 @@ window.onload = function () {
     $("#graph2").click(function (){app.change("/json/NODES1.json");});
 };
 
-function App() {
-    var path = "/json/NODES.json";
+window.onresize = function(event) {
+    app.reload();
+};
 
-    function reload() {
+function App() {
+    var path = "/GraphProvider";
+
+    this.reload = function() {
         d3.select("svg").selectAll("*").remove();
         app.init();
     };
 
     this.change = function (newPath) {
         path = newPath;
-        reload();
+        this.reload();
     };
 
     this.Add = function (node, connections) {
@@ -25,9 +29,12 @@ function App() {
     };
 
     this.init = function() {
+        var el   = document.getElementById("svg-main"); 
+        var rect = el.getBoundingClientRect(); 
+        
         var svg = d3.select("svg"),
-            width = +svg.attr("width"),
-            height = +svg.attr("height");
+            width = +rect.width,
+            height = +rect.height;
 
         var color = d3.scaleOrdinal(d3.schemeCategory20);
 

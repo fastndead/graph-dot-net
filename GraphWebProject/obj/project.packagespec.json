@@ -26,6 +26,10 @@
   "frameworks": {
     "netcoreapp2.0": {
       "dependencies": {
+        "EntityFramework": {
+          "target": "Package",
+          "version": "[6.2.0, )"
+        },
         "Microsoft.AspNetCore.All": {
           "target": "Package",
           "version": "[2.0.5, )"
@@ -35,6 +39,14 @@
           "target": "Package",
           "version": "[2.0.0, )",
           "autoReferenced": true
+        },
+        "Npgsql": {
+          "target": "Package",
+          "version": "[4.0.3, )"
+        },
+        "System.Configuration.ConfigurationManager": {
+          "target": "Package",
+          "version": "[4.5.0, )"
         }
       },
       "imports": [
