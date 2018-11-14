@@ -13,15 +13,19 @@ namespace GraphWebProject
     {
         public class Node
         {
-           // public int index { get; set; }
+            // public int index { get; set; }
             public string id { get; set; }
             public int group { get; set; }
 
-            public Node(int index, string id, int group)
+            public Node( string id, int group)
             {
                 //this.index = index;
                 this.id = id;
                 this.group = group;
+            }
+
+            public Node()
+            {
             }
         }
 
@@ -32,7 +36,7 @@ namespace GraphWebProject
             public string target { get; set; }
             public int value { get; set; }
 
-            public Link(int index, string source, string target, int value)
+            public Link(string source, string target, int value)
             {
               //  this.index = index;
                 this.source = source;
@@ -50,6 +54,16 @@ namespace GraphWebProject
             links = new List<Link>();
         }
 
+        public void AddNode(string id, int group)
+        {
+            this.nodes.Add(new Node(id,group));
+        }
+
+        public void AddLink(string source, string target, int value)
+        {
+            this.links.Add(new Link(source, target, value));
+        }
+
         public void GetFromDb()//метод заполнения сущности графа с базы данных
         {
             var connString = ConfigurationManager.ConnectionStrings["DBConnection"].ConnectionString;
@@ -62,7 +76,7 @@ namespace GraphWebProject
                 using (var reader = cmd.ExecuteReader())
                     while (reader.Read())
                     {
-                        nodes.Add(new Node(reader.GetInt32(0),reader.GetString(1),reader.GetInt32(2)));
+                        nodes.Add(new Node(reader.GetString(1),reader.GetInt32(2)));
                     }
             }
             
@@ -74,7 +88,7 @@ namespace GraphWebProject
                 using (var reader = cmd.ExecuteReader())
                     while (reader.Read())
                     {
-                        links.Add(new Link(reader.GetInt32(0),reader.GetString(1),reader.GetString(2),reader.GetInt32(3)));
+                        links.Add(new Link(reader.GetString(1),reader.GetString(2),reader.GetInt32(3)));
                     }
             }
             

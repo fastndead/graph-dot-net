@@ -2,33 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21c7a71c-a92a-46e6-8367-b4a81d5d789c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GraphWebProject/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphWebProject/Controllers/GraphProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphWebProject/Graph.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphWebProject/JsonParser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphWebProject/app.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphWebProject/scripts/script.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphWebProject/wwwroot/json/LINKS.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GraphWebProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GraphWebProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GraphWebProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GraphWebProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GraphWebProject/GraphWebProject.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/GraphWebProject.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GraphWebProject/Controllers/GraphProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/Controllers/GraphProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GraphWebProject/Graph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/Graph.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GraphWebProject/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/Pages/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GraphWebProject/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GraphWebProject/bin/Debug/netcoreapp2.0/GraphWebProject.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/bin/Debug/netcoreapp2.0/GraphWebProject.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GraphWebProject/bin/Debug/netcoreapp2.0/GraphWebProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/bin/Debug/netcoreapp2.0/GraphWebProject.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GraphWebProject/bin/Debug/netcoreapp2.0/GraphWebProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/bin/Debug/netcoreapp2.0/GraphWebProject.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GraphWebProject/obj/GraphWebProject.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/obj/GraphWebProject.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GraphWebProject/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GraphWebProject/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GraphWebProject/wwwroot/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/wwwroot/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GraphWebProject/wwwroot/js/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/wwwroot/js/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GraphWebProject/wwwroot/json/NODES.json" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/wwwroot/json/NODES.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,42 +108,45 @@
     <session id="886400627">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.30" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="config" value="3" />
-          <entry key="cs" value="18" />
-          <entry key="cshtml" value="1" />
-          <entry key="css" value="2" />
+          <entry key="config" value="4" />
+          <entry key="cs" value="20" />
+          <entry key="cshtml" value="2" />
+          <entry key="css" value="3" />
           <entry key="js" value="1" />
-          <entry key="json" value="7" />
+          <entry key="json" value="8" />
           <entry key="links_seq" value="1" />
           <entry key="nodes_seq" value="1" />
           <entry key="sql" value="10" />
-          <entry key="t_links" value="1" />
-          <entry key="t_nodes" value="3" />
+          <entry key="t_links" value="3" />
+          <entry key="t_nodes" value="5" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="18" />
-          <entry key="CSS" value="2" />
-          <entry key="Config" value="3" />
-          <entry key="Database Element" value="4" />
-          <entry key="JSON" value="7" />
+          <entry key="C#" value="20" />
+          <entry key="CSS" value="3" />
+          <entry key="Config" value="4" />
+          <entry key="Database Element" value="8" />
+          <entry key="JSON" value="8" />
           <entry key="JavaScript" value="1" />
-          <entry key="Razor" value="1" />
+          <entry key="Razor" value="2" />
           <entry key="SQL" value="8" />
           <entry key="Scratch" value="4" />
           <entry key="XML" value="1" />
@@ -167,26 +155,26 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cell" value="12" />
-          <entry key="config" value="20" />
-          <entry key="cs" value="2413" />
-          <entry key="cshtml" value="190" />
-          <entry key="css" value="96" />
-          <entry key="js" value="126" />
+          <entry key="config" value="24" />
+          <entry key="cs" value="3202" />
+          <entry key="cshtml" value="409" />
+          <entry key="css" value="251" />
+          <entry key="js" value="317" />
           <entry key="json" value="37" />
-          <entry key="sql" value="678" />
+          <entry key="sql" value="686" />
           <entry key="txt" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="2413" />
-          <entry key="CSS" value="96" />
-          <entry key="Config" value="20" />
+          <entry key="C#" value="3202" />
+          <entry key="CSS" value="251" />
+          <entry key="Config" value="24" />
           <entry key="JSON" value="37" />
-          <entry key="JavaScript" value="126" />
+          <entry key="JavaScript" value="317" />
           <entry key="PLAIN_TEXT" value="27" />
-          <entry key="Razor" value="190" />
-          <entry key="SQL" value="177" />
+          <entry key="Razor" value="409" />
+          <entry key="SQL" value="185" />
           <entry key="Scratch" value="513" />
         </counts>
       </usages-collector>
@@ -195,15 +183,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GraphWebProject/Program.cs">
+        <entry file="file://$PROJECT_DIR$/GraphWebProject/JsonParser.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+            <state relative-caret-position="315">
+              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
               <folding>
-                <marker date="1539623040935" expanded="false" signature="6:255" ph="..." />
-                <marker date="1539623040935" expanded="true" signature="282:603" ph="{...}" />
-                <marker date="1539623040935" expanded="true" signature="309:601" ph="{...}" />
-                <marker date="1539623040935" expanded="true" signature="362:420" ph="{...}" />
+                <marker date="1542139045448" expanded="false" signature="6:87" ph="..." />
+                <marker date="1542139045448" expanded="true" signature="115:2031" ph="{...}" />
+                <marker date="1542139045448" expanded="true" signature="145:2029" ph="{...}" />
+                <marker date="1542139045448" expanded="true" signature="187:345" ph="/* вспомогательный метод для парсинга json в sql запрос и заполнения таблицы ... */" />
+                <marker date="1542139045448" expanded="true" signature="345:2023" ph="{...}" />
+                <marker date="1542139045448" expanded="true" signature="499:1161" ph="{...}" />
+                <marker date="1542139045448" expanded="true" signature="815:1147" ph="{...}" />
+                <marker date="1542139045448" expanded="true" signature="881:1128" ph="{...}" />
+                <marker date="1542139045448" expanded="true" signature="1305:2000" ph="{...}" />
+                <marker date="1542139045448" expanded="true" signature="1621:1986" ph="{...}" />
+                <marker date="1542139045448" expanded="true" signature="1687:1967" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -212,57 +207,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GraphWebProject/Startup.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+            <state relative-caret-position="210">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
               <folding>
-                <marker date="1541938772547" expanded="false" signature="6:278" ph="..." />
-                <marker date="1541938772547" expanded="true" signature="305:1144" ph="{...}" />
-                <marker date="1541938772547" expanded="true" signature="332:1142" ph="{...}" />
-                <marker date="1541938772547" expanded="true" signature="347:562" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
-                <marker date="1541938772547" expanded="true" signature="629:745" ph="{...}" />
-                <marker date="1541938772547" expanded="true" signature="933:1136" ph="{...}" />
-                <marker date="1541938772547" expanded="true" signature="1010:1124" ph="{...}" />
+                <marker date="1542139009666" expanded="true" signature="6:278" ph="..." />
+                <marker date="1542139009666" expanded="true" signature="305:1210" ph="{...}" />
+                <marker date="1542139009666" expanded="true" signature="332:1208" ph="{...}" />
+                <marker date="1542139009666" expanded="true" signature="400:615" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
+                <marker date="1542139009666" expanded="true" signature="682:798" ph="{...}" />
+                <marker date="1542139009666" expanded="true" signature="986:1202" ph="{...}" />
+                <marker date="1542139009666" expanded="true" signature="1063:1177" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GraphWebProject/scripts/links-script.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="45" selection-start-column="45" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GraphWebProject/JsonParser.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-              <folding>
-                <marker date="1541938772590" expanded="true" signature="6:87" ph="..." />
-                <marker date="1541938772590" expanded="true" signature="115:2031" ph="{...}" />
-                <marker date="1541938772590" expanded="true" signature="145:2029" ph="{...}" />
-                <marker date="1541938772590" expanded="true" signature="187:345" ph="/* вспомогательный метод для парсинга json в sql запрос и заполнения таблицы ... */" />
-                <marker date="1541938772590" expanded="true" signature="345:2023" ph="{...}" />
-                <marker date="1541938772590" expanded="true" signature="499:1161" ph="{...}" />
-                <marker date="1541938772590" expanded="true" signature="815:1147" ph="{...}" />
-                <marker date="1541938772590" expanded="true" signature="881:1128" ph="{...}" />
-                <marker date="1541938772590" expanded="true" signature="1305:2000" ph="{...}" />
-                <marker date="1541938772590" expanded="true" signature="1621:1986" ph="{...}" />
-                <marker date="1541938772590" expanded="true" signature="1687:1967" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GraphWebProject/wwwroot/js/layout.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -270,22 +225,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GraphWebProject/Graph.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="52" column="78" selection-start-line="52" selection-start-column="78" selection-end-line="52" selection-end-column="78" />
+            <state relative-caret-position="45">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding>
-                <marker date="1541938772678" expanded="true" signature="6:236" ph="..." />
-                <marker date="1541938772678" expanded="true" signature="263:2623" ph="{...}" />
-                <marker date="1541938772678" expanded="true" signature="318:2621" ph="{...}" />
-                <marker date="1541938772678" expanded="true" signature="350:691" ph="{...}" />
-                <marker date="1541938772678" expanded="true" signature="549:681" ph="{...}" />
-                <marker date="1541938772678" expanded="true" signature="718:1175" ph="{...}" />
-                <marker date="1541938772678" expanded="true" signature="987:1165" ph="{...}" />
-                <marker date="1541938772678" expanded="true" signature="1274:1370" ph="{...}" />
-                <marker date="1541938772678" expanded="true" signature="1450:2614" ph="{...}" />
-                <marker date="1541938772678" expanded="true" signature="1659:2060" ph="{...}" />
-                <marker date="1541938772678" expanded="true" signature="1898:2046" ph="{...}" />
-                <marker date="1541938772678" expanded="true" signature="2170:2591" ph="{...}" />
-                <marker date="1541938772678" expanded="true" signature="2409:2577" ph="{...}" />
+                <marker date="1542139009697" expanded="false" signature="6:236" ph="..." />
+                <marker date="1542139009697" expanded="true" signature="263:2890" ph="{...}" />
+                <marker date="1542139009697" expanded="true" signature="318:2888" ph="{...}" />
+                <marker date="1542139009697" expanded="true" signature="350:737" ph="{...}" />
+                <marker date="1542139009697" expanded="true" signature="540:672" ph="{...}" />
+                <marker date="1542139009697" expanded="true" signature="699:727" ph="{...}" />
+                <marker date="1542139009697" expanded="true" signature="764:1210" ph="{...}" />
+                <marker date="1542139009697" expanded="true" signature="1022:1200" ph="{...}" />
+                <marker date="1542139009697" expanded="true" signature="1309:1405" ph="{...}" />
+                <marker date="1542139009697" expanded="true" signature="1456:1524" ph="{...}" />
+                <marker date="1542139009697" expanded="true" signature="1594:1675" ph="{...}" />
+                <marker date="1542139009697" expanded="true" signature="1755:2881" ph="{...}" />
+                <marker date="1542139009697" expanded="true" signature="1964:2346" ph="{...}" />
+                <marker date="1542139009697" expanded="true" signature="2203:2332" ph="{...}" />
+                <marker date="1542139009697" expanded="true" signature="2456:2858" ph="{...}" />
+                <marker date="1542139009697" expanded="true" signature="2695:2844" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -294,40 +252,88 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GraphWebProject/Controllers/GraphProvider.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
               <folding>
-                <marker date="1541938478468" expanded="true" signature="70:299" ph="{...}" />
-                <marker date="1541938478468" expanded="true" signature="116:297" ph="{...}" />
-                <marker date="1541938478468" expanded="true" signature="171:291" ph="{...}" />
+                <marker date="1542139009679" expanded="true" signature="6:45" ph="..." />
+                <marker date="1542139009679" expanded="true" signature="84:1160" ph="{...}" />
+                <marker date="1542139009679" expanded="true" signature="130:1158" ph="{...}" />
+                <marker date="1542139009679" expanded="true" signature="145:199" ph="/* public Graph MainGraph = new Graph(); ... */" />
+                <marker date="1542139009679" expanded="true" signature="233:297" ph="{...}" />
+                <marker date="1542139009679" expanded="true" signature="380:628" ph="{...}" />
+                <marker date="1542139009679" expanded="true" signature="406:498" ph="{...}" />
+                <marker date="1542139009679" expanded="true" signature="530:585" ph="{...}" />
+                <marker date="1542139009679" expanded="true" signature="733:996" ph="{...}" />
+                <marker date="1542139009679" expanded="true" signature="759:853" ph="{...}" />
+                <marker date="1542139009679" expanded="true" signature="885:953" ph="{...}" />
+                <marker date="1542139009679" expanded="true" signature="1032:1152" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GraphWebProject/wwwroot/js/layout.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GraphWebProject/Pages/Index.cshtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+              <folding>
+                <marker date="1542184111348" expanded="true" signature="54:2348" ph="&lt;html.../&gt;" />
+                <marker date="1542184111348" expanded="true" signature="61:655" ph="&lt;head.../&gt;" />
+                <marker date="1542184111348" expanded="true" signature="656:2340" ph="&lt;body.../&gt;" />
+                <marker date="1542184111348" expanded="true" signature="680:876" ph="&lt;div.../&gt;" />
+                <marker date="1542184111348" expanded="true" signature="708:869" ph="&lt;div.../&gt;" />
+                <marker date="1542184111348" expanded="true" signature="879:1744" ph="&lt;div.../&gt;" />
+                <marker date="1542184111348" expanded="true" signature="910:1018" ph="&lt;div.../&gt;" />
+                <marker date="1542184111348" expanded="true" signature="1023:1737" ph="&lt;div.../&gt;" />
+                <marker date="1542184111348" expanded="true" signature="1051:1722" ph="&lt;div.../&gt;" />
+                <marker date="1542184111348" expanded="true" signature="1123:1564" ph="&lt;form.../&gt;" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GraphWebProject/wwwroot/json/NODES.json">
+        <entry file="file://$PROJECT_DIR$/GraphWebProject/wwwroot/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="311" column="8" selection-start-line="311" selection-start-column="8" selection-end-line="311" selection-end-column="8" />
+            <state relative-caret-position="195">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GraphWebProject/scripts/nodes-script.sql">
+        <entry file="file://$PROJECT_DIR$/GraphWebProject/scripts/script.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="48" selection-start-column="48" selection-end-column="48" />
+            <state relative-caret-position="150">
+              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/GraphWebProject/scripts/script.sql">
-          <provider selected="true" editor-type-id="text-editor">
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://6a55c55d-1293-4ed6-a70c-1098d3f21382/database/postgres/schema/graph_scheme/table/t_links">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
-              <caret column="46" selection-start-column="46" selection-end-column="46" />
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GraphWebProject/app.config">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -349,6 +355,7 @@
     <setting file="file://$PROJECT_DIR$/GraphWebProject/Pages/Index.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GraphWebProject/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GraphWebProject/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/899ABC88-C3F1-4C7D-B7BA-444AD3BDFC76/34/52c85627/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GraphWebProject/Pages/Index.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GraphWebProject/JsonParser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GraphWebProject/Graph.cs" root0="FORCE_HIGHLIGHTING" />
@@ -360,14 +367,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/GraphWebProject/Pages/Index.cshtml.cs" />
-        <option value="$PROJECT_DIR$/GraphWebProject/Pages/Index.cshtml" />
-        <option value="$PROJECT_DIR$/GraphWebProject/wwwroot/css/styles.css" />
         <option value="$PROJECT_DIR$/GraphWebProject/script.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6a55c55d-1293-4ed6-a70c-1098d3f21382/console_1.sql" />
         <option value="$PROJECT_DIR$/GraphWebProject/webconfig.xml" />
         <option value="$PROJECT_DIR$/GraphWebProject/GraphContext.cs" />
         <option value="$PROJECT_DIR$/GraphWebProject/web.config" />
-        <option value="$PROJECT_DIR$/GraphWebProject/app.config" />
         <option value="$PROJECT_DIR$/GraphWebProject/TEST_CONTROLLER.cs" />
         <option value="$PROJECT_DIR$/GraphWebProject/TESTCONTROLLER.cs" />
         <option value="$PROJECT_DIR$/GraphWebProject/HelloWorldController.cs" />
@@ -377,14 +381,17 @@
         <option value="$PROJECT_DIR$/GraphWebProject/wwwroot/json/LINKS.json" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6a55c55d-1293-4ed6-a70c-1098d3f21382/console_2.sql" />
         <option value="$PROJECT_DIR$/GraphWebProject/wwwroot/json/NODES.json" />
-        <option value="$PROJECT_DIR$/GraphWebProject/wwwroot/js/layout.js" />
-        <option value="$PROJECT_DIR$/GraphWebProject/Controllers/GraphProvider.cs" />
-        <option value="$PROJECT_DIR$/GraphWebProject/JsonParser.cs" />
-        <option value="$PROJECT_DIR$/GraphWebProject/Graph.cs" />
-        <option value="$PROJECT_DIR$/GraphWebProject/Startup.cs" />
         <option value="$PROJECT_DIR$/GraphWebProject/scripts/links-script.sql" />
         <option value="$PROJECT_DIR$/GraphWebProject/scripts/nodes-script.sql" />
         <option value="$PROJECT_DIR$/GraphWebProject/scripts/script.sql" />
+        <option value="$PROJECT_DIR$/GraphWebProject/app.config" />
+        <option value="$PROJECT_DIR$/GraphWebProject/Graph.cs" />
+        <option value="$PROJECT_DIR$/GraphWebProject/Startup.cs" />
+        <option value="$PROJECT_DIR$/GraphWebProject/Controllers/GraphProvider.cs" />
+        <option value="$PROJECT_DIR$/GraphWebProject/JsonParser.cs" />
+        <option value="$PROJECT_DIR$/GraphWebProject/wwwroot/css/styles.css" />
+        <option value="$PROJECT_DIR$/GraphWebProject/Pages/Index.cshtml" />
+        <option value="$PROJECT_DIR$/GraphWebProject/wwwroot/js/layout.js" />
       </list>
     </option>
   </component>
@@ -422,13 +429,13 @@
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="GraphWebProject" type="24d0babc:SolutionExplorerModelNode" />
               <item name="GraphWebProject" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Dependencies" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="GraphWebProject" type="24d0babc:SolutionExplorerModelNode" />
               <item name="GraphWebProject" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Pages" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
@@ -441,6 +448,13 @@
               <item name="GraphWebProject" type="24d0babc:SolutionExplorerModelNode" />
               <item name="GraphWebProject" type="24d0babc:SolutionExplorerModelNode" />
               <item name="wwwroot" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="GraphWebProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="GraphWebProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="wwwroot" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="css" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
@@ -524,12 +538,16 @@
       <workItem from="1540460654248" duration="1084000" />
       <workItem from="1541584073413" duration="1394000" />
       <workItem from="1541670769908" duration="8596000" />
-      <workItem from="1541840482046" duration="16041000" />
+      <workItem from="1541840482046" duration="16762000" />
+      <workItem from="1542014945325" duration="436000" />
+      <workItem from="1542016859626" duration="227000" />
+      <workItem from="1542026687604" duration="5837000" />
+      <workItem from="1542138533477" duration="3587000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29281000" />
+    <option name="totallyTimeSpent" value="40089000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -542,22 +560,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2081545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32891566" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49928468" visible="true" weight="0.3686747" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49928468" visible="true" weight="0.3686747" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="NuGet" order="8" weight="0.32891566" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" weight="0.0" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32891566" />
       <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32891566" />
       <window_info anchor="bottom" id="Unit Tests" order="12" />
       <window_info anchor="bottom" id="REST Client" order="13" />
@@ -568,8 +585,35 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Errors In Solution" order="3" weight="0.3297568" />
-      <window_info anchor="right" id="Database" order="4" weight="0.26824033" />
+      <window_info anchor="right" id="Database" order="4" weight="0.2532189" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2081545" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32891566" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49928468" weight="0.3686747" />
+      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="NuGet" order="8" weight="0.32891566" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32891566" />
+      <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32891566" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="REST Client" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="14" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.5007153" side_tool="true" weight="0.3686747" />
+      <window_info anchor="bottom" id="Build" order="16" weight="0.32771084" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" weight="0.3297568" />
+      <window_info anchor="right" id="Database" order="4" weight="0.2532189" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -598,83 +642,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GraphWebProject/wwwroot/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/Pages/Index.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="38" />
-          <folding>
-            <marker date="1541790481987" expanded="true" signature="61:655" ph="&lt;head.../&gt;" />
-            <marker date="1541790481987" expanded="true" signature="656:2386" ph="&lt;body.../&gt;" />
-            <marker date="1541790481987" expanded="true" signature="680:876" ph="&lt;div.../&gt;" />
-            <marker date="1541790481987" expanded="true" signature="708:869" ph="&lt;div.../&gt;" />
-            <marker date="1541790481987" expanded="true" signature="879:1677" ph="&lt;div.../&gt;" />
-            <marker date="1541790481987" expanded="true" signature="910:1018" ph="&lt;div.../&gt;" />
-            <marker date="1541790481987" expanded="true" signature="1023:1670" ph="&lt;div.../&gt;" />
-            <marker date="1541790481987" expanded="true" signature="1051:1655" ph="&lt;div.../&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/wwwroot/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GraphWebProject/Pages/Index.cshtml.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <marker date="1541585321286" expanded="false" signature="6:56" ph="..." />
-            <marker date="1541585321286" expanded="true" signature="131:325" ph="{...}" />
-            <marker date="1541585321286" expanded="true" signature="239:319" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://6a55c55d-1293-4ed6-a70c-1098d3f21382/database/postgres/schema/graph_scheme/sequence/nodes_seq">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="16" selection-start-line="1" selection-end-line="1" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6a55c55d-1293-4ed6-a70c-1098d3f21382/database/postgres/schema/graph_scheme/sequence/links_seq">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/webconfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/web.Debug.config">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/web.config">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/Controllers/HelloWorldController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/GraphContext.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://6a55c55d-1293-4ed6-a70c-1098d3f21382/database/postgres/schema/graph_scheme/sequence/nodes_seq" />
+    <entry file="das://6a55c55d-1293-4ed6-a70c-1098d3f21382/database/postgres/schema/graph_scheme/sequence/links_seq" />
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/webconfig.xml" />
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/web.Debug.config" />
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/web.config" />
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/Controllers/HelloWorldController.cs" />
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/GraphContext.cs" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6a55c55d-1293-4ed6-a70c-1098d3f21382/console_1.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -682,13 +663,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/json_dev.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/json_dev.cs" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6a55c55d-1293-4ed6-a70c-1098d3f21382/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -696,31 +671,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/app.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6a55c55d-1293-4ed6-a70c-1098d3f21382/database/postgres/schema/graph_scheme/table/t_links">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6a55c55d-1293-4ed6-a70c-1098d3f21382/console_2.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6a55c55d-1293-4ed6-a70c-1098d3f21382/database/postgres/schema/graph_scheme/table/t_nodes">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -736,100 +690,10 @@
         <state relative-caret-position="-227" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/wwwroot/json/NODES.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="311" column="8" selection-start-line="311" selection-start-column="8" selection-end-line="311" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/Controllers/GraphProvider.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <marker date="1541938478468" expanded="true" signature="70:299" ph="{...}" />
-            <marker date="1541938478468" expanded="true" signature="116:297" ph="{...}" />
-            <marker date="1541938478468" expanded="true" signature="171:291" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/wwwroot/js/layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/Graph.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="52" column="78" selection-start-line="52" selection-start-column="78" selection-end-line="52" selection-end-column="78" />
-          <folding>
-            <marker date="1541938772678" expanded="true" signature="6:236" ph="..." />
-            <marker date="1541938772678" expanded="true" signature="263:2623" ph="{...}" />
-            <marker date="1541938772678" expanded="true" signature="318:2621" ph="{...}" />
-            <marker date="1541938772678" expanded="true" signature="350:691" ph="{...}" />
-            <marker date="1541938772678" expanded="true" signature="549:681" ph="{...}" />
-            <marker date="1541938772678" expanded="true" signature="718:1175" ph="{...}" />
-            <marker date="1541938772678" expanded="true" signature="987:1165" ph="{...}" />
-            <marker date="1541938772678" expanded="true" signature="1274:1370" ph="{...}" />
-            <marker date="1541938772678" expanded="true" signature="1450:2614" ph="{...}" />
-            <marker date="1541938772678" expanded="true" signature="1659:2060" ph="{...}" />
-            <marker date="1541938772678" expanded="true" signature="1898:2046" ph="{...}" />
-            <marker date="1541938772678" expanded="true" signature="2170:2591" ph="{...}" />
-            <marker date="1541938772678" expanded="true" signature="2409:2577" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/JsonParser.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-          <folding>
-            <marker date="1541938772590" expanded="true" signature="6:87" ph="..." />
-            <marker date="1541938772590" expanded="true" signature="115:2031" ph="{...}" />
-            <marker date="1541938772590" expanded="true" signature="145:2029" ph="{...}" />
-            <marker date="1541938772590" expanded="true" signature="187:345" ph="/* вспомогательный метод для парсинга json в sql запрос и заполнения таблицы ... */" />
-            <marker date="1541938772590" expanded="true" signature="345:2023" ph="{...}" />
-            <marker date="1541938772590" expanded="true" signature="499:1161" ph="{...}" />
-            <marker date="1541938772590" expanded="true" signature="815:1147" ph="{...}" />
-            <marker date="1541938772590" expanded="true" signature="881:1128" ph="{...}" />
-            <marker date="1541938772590" expanded="true" signature="1305:2000" ph="{...}" />
-            <marker date="1541938772590" expanded="true" signature="1621:1986" ph="{...}" />
-            <marker date="1541938772590" expanded="true" signature="1687:1967" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GraphWebProject/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding>
-            <marker date="1539623040935" expanded="false" signature="6:255" ph="..." />
-            <marker date="1539623040935" expanded="true" signature="282:603" ph="{...}" />
-            <marker date="1539623040935" expanded="true" signature="309:601" ph="{...}" />
-            <marker date="1539623040935" expanded="true" signature="362:420" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/Startup.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
-          <folding>
-            <marker date="1541938772547" expanded="false" signature="6:278" ph="..." />
-            <marker date="1541938772547" expanded="true" signature="305:1144" ph="{...}" />
-            <marker date="1541938772547" expanded="true" signature="332:1142" ph="{...}" />
-            <marker date="1541938772547" expanded="true" signature="347:562" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
-            <marker date="1541938772547" expanded="true" signature="629:745" ph="{...}" />
-            <marker date="1541938772547" expanded="true" signature="933:1136" ph="{...}" />
-            <marker date="1541938772547" expanded="true" signature="1010:1124" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -837,6 +701,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="45" selection-start-column="45" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/wwwroot/json/NODES.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4665">
+          <caret line="311" column="8" selection-start-line="311" selection-start-column="8" selection-end-line="311" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6a55c55d-1293-4ed6-a70c-1098d3f21382/database/postgres/schema/graph_scheme/table/t_nodes">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/899ABC88-C3F1-4C7D-B7BA-444AD3BDFC76/34/52c85627/ExecutionContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="99" column="6" selection-start-line="99" selection-start-column="6" selection-end-line="99" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -849,8 +734,137 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GraphWebProject/scripts/script.sql">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6a55c55d-1293-4ed6-a70c-1098d3f21382/database/postgres/schema/graph_scheme/table/t_links">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <caret column="46" selection-start-column="46" selection-end-column="46" />
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/app.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/JsonParser.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <marker date="1542139045448" expanded="false" signature="6:87" ph="..." />
+            <marker date="1542139045448" expanded="true" signature="115:2031" ph="{...}" />
+            <marker date="1542139045448" expanded="true" signature="145:2029" ph="{...}" />
+            <marker date="1542139045448" expanded="true" signature="187:345" ph="/* вспомогательный метод для парсинга json в sql запрос и заполнения таблицы ... */" />
+            <marker date="1542139045448" expanded="true" signature="345:2023" ph="{...}" />
+            <marker date="1542139045448" expanded="true" signature="499:1161" ph="{...}" />
+            <marker date="1542139045448" expanded="true" signature="815:1147" ph="{...}" />
+            <marker date="1542139045448" expanded="true" signature="881:1128" ph="{...}" />
+            <marker date="1542139045448" expanded="true" signature="1305:2000" ph="{...}" />
+            <marker date="1542139045448" expanded="true" signature="1621:1986" ph="{...}" />
+            <marker date="1542139045448" expanded="true" signature="1687:1967" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <marker date="1542139009666" expanded="true" signature="6:278" ph="..." />
+            <marker date="1542139009666" expanded="true" signature="305:1210" ph="{...}" />
+            <marker date="1542139009666" expanded="true" signature="332:1208" ph="{...}" />
+            <marker date="1542139009666" expanded="true" signature="400:615" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
+            <marker date="1542139009666" expanded="true" signature="682:798" ph="{...}" />
+            <marker date="1542139009666" expanded="true" signature="986:1202" ph="{...}" />
+            <marker date="1542139009666" expanded="true" signature="1063:1177" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/Graph.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <marker date="1542139009697" expanded="false" signature="6:236" ph="..." />
+            <marker date="1542139009697" expanded="true" signature="263:2890" ph="{...}" />
+            <marker date="1542139009697" expanded="true" signature="318:2888" ph="{...}" />
+            <marker date="1542139009697" expanded="true" signature="350:737" ph="{...}" />
+            <marker date="1542139009697" expanded="true" signature="540:672" ph="{...}" />
+            <marker date="1542139009697" expanded="true" signature="699:727" ph="{...}" />
+            <marker date="1542139009697" expanded="true" signature="764:1210" ph="{...}" />
+            <marker date="1542139009697" expanded="true" signature="1022:1200" ph="{...}" />
+            <marker date="1542139009697" expanded="true" signature="1309:1405" ph="{...}" />
+            <marker date="1542139009697" expanded="true" signature="1456:1524" ph="{...}" />
+            <marker date="1542139009697" expanded="true" signature="1594:1675" ph="{...}" />
+            <marker date="1542139009697" expanded="true" signature="1755:2881" ph="{...}" />
+            <marker date="1542139009697" expanded="true" signature="1964:2346" ph="{...}" />
+            <marker date="1542139009697" expanded="true" signature="2203:2332" ph="{...}" />
+            <marker date="1542139009697" expanded="true" signature="2456:2858" ph="{...}" />
+            <marker date="1542139009697" expanded="true" signature="2695:2844" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/wwwroot/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/Controllers/GraphProvider.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+          <folding>
+            <marker date="1542139009679" expanded="true" signature="6:45" ph="..." />
+            <marker date="1542139009679" expanded="true" signature="84:1160" ph="{...}" />
+            <marker date="1542139009679" expanded="true" signature="130:1158" ph="{...}" />
+            <marker date="1542139009679" expanded="true" signature="145:199" ph="/* public Graph MainGraph = new Graph(); ... */" />
+            <marker date="1542139009679" expanded="true" signature="233:297" ph="{...}" />
+            <marker date="1542139009679" expanded="true" signature="380:628" ph="{...}" />
+            <marker date="1542139009679" expanded="true" signature="406:498" ph="{...}" />
+            <marker date="1542139009679" expanded="true" signature="530:585" ph="{...}" />
+            <marker date="1542139009679" expanded="true" signature="733:996" ph="{...}" />
+            <marker date="1542139009679" expanded="true" signature="759:853" ph="{...}" />
+            <marker date="1542139009679" expanded="true" signature="885:953" ph="{...}" />
+            <marker date="1542139009679" expanded="true" signature="1032:1152" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/Pages/Index.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+          <folding>
+            <marker date="1542184111348" expanded="true" signature="54:2348" ph="&lt;html.../&gt;" />
+            <marker date="1542184111348" expanded="true" signature="61:655" ph="&lt;head.../&gt;" />
+            <marker date="1542184111348" expanded="true" signature="656:2340" ph="&lt;body.../&gt;" />
+            <marker date="1542184111348" expanded="true" signature="680:876" ph="&lt;div.../&gt;" />
+            <marker date="1542184111348" expanded="true" signature="708:869" ph="&lt;div.../&gt;" />
+            <marker date="1542184111348" expanded="true" signature="879:1744" ph="&lt;div.../&gt;" />
+            <marker date="1542184111348" expanded="true" signature="910:1018" ph="&lt;div.../&gt;" />
+            <marker date="1542184111348" expanded="true" signature="1023:1737" ph="&lt;div.../&gt;" />
+            <marker date="1542184111348" expanded="true" signature="1051:1722" ph="&lt;div.../&gt;" />
+            <marker date="1542184111348" expanded="true" signature="1123:1564" ph="&lt;form.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/wwwroot/js/layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
         </state>
       </provider>
     </entry>

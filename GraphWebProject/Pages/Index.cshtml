@@ -30,10 +30,12 @@
     <div class="col-4">
         <div class="container bg-light">
           <h2>Actions</h2>
-          <button type="button" class="btn btn-primary" id="graph1">Graph Example #1</button>
-          <button type="button" class="btn btn-primary" id="graph2">Graph Example #2</button>
-          <button type="button" class="btn btn-primary">Graph Example #3</button>
-          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Add Node</button>
+            <form class="add-node-input">
+                <input type="text" id="add-node-input-id" class="add-node-input-inner form-control" placeholder="Node name"/>
+                <input type="text" id="add-node-input-group" class="add-node-input-inner form-control" placeholder="Node group"/>
+                <button type="button" id="add-node-btn" class="add-node-input-inner btn btn-success">Add Node</button>
+                
+            </form>
           <button type="button" class="btn btn-danger">Delete Node</button>
           <button type="button" class="btn btn-info">Info</button>
         </div>    
@@ -44,7 +46,7 @@
 
 <!-- Modal -->
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 

@@ -3,13 +3,16 @@ var app;
 window.onload = function () {
     app = new App();
     app.init();
-    $("#graph1").click(function (){app.change("/json/NODES.json");});
-    $("#graph2").click(function (){app.change("/json/NODES1.json");});
+     $("#add-node-btn").click(function (){
+        var node = {"id":document.getElementById("add-node-input-id").value,"group": document.getElementById("add-node-input-group").value};
+        app.Add(node)
+    });
 };
 
 window.onresize = function(event) {
     app.reload();
 };
+
 
 function App() {
     var path = "/GraphProvider";
@@ -24,8 +27,17 @@ function App() {
         this.reload();
     };
 
-    this.Add = function (node, connections) {
-
+    this.Add = function (node) {
+        $.ajax({
+            type: "POST",
+            url: "http://localhost:5000/GraphProvider/Create",
+            contentType: 'application/json',
+            data: JSON.stringify(node),
+        }).done(function () {
+            app.reload();
+        }).fail(function (msg) {
+            view.error(msg)
+        });
     };
 
     this.init = function() {
