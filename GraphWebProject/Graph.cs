@@ -25,8 +25,7 @@ namespace GraphWebProject
             }
 
             public Node()
-            {
-            }
+            {}
         }
 
         public class Link
@@ -43,6 +42,9 @@ namespace GraphWebProject
                 this.target = target;
                 this.value = value;
             }
+
+            public Link()
+            {}
         }
 
         public List<Node> nodes;
@@ -59,9 +61,19 @@ namespace GraphWebProject
             this.nodes.Add(new Node(id,group));
         }
 
+        public void AddNode(Node node)
+        {
+            this.nodes.Add(node);
+        }
+
         public void AddLink(string source, string target, int value)
         {
             this.links.Add(new Link(source, target, value));
+        }
+
+        public void AddLink(Link link)
+        {
+            this.links.Add(link);
         }
 
         public void GetFromDb()//метод заполнения сущности графа с базы данных

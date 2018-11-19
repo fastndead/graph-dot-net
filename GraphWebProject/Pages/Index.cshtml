@@ -29,14 +29,25 @@
     </div>
     <div class="col-4">
         <div class="container bg-light">
-          <h2>Actions</h2>
-            <form class="add-node-input">
-                <input type="text" id="add-node-input-id" class="add-node-input-inner form-control" placeholder="Node name"/>
-                <input type="text" id="add-node-input-group" class="add-node-input-inner form-control" placeholder="Node group"/>
-                <button type="button" id="add-node-btn" class="add-node-input-inner btn btn-success">Add Node</button>
-                
+            <h2>Actions</h2>
+            <form id="add-node-form" class="form-add">
+                <label for="add-node-form" class="text-dark">Node addition</label>
+                <input type="text" id="add-node-input-id" class="add-input-inner form-control" placeholder="Node name"/>
+                <input type="text" id="add-node-input-group" class="add-input-inner form-control" placeholder="Node group"/>
+                <button type="button" id="add-node-btn" class="add-input-inner btn btn-success">Add Node</button>
             </form>
-          <button type="button" class="btn btn-danger">Delete Node</button>
+            <form id="add-link-form" class="form-add">
+                <label for="add-link-form" class="text-dark">Link addition</label>
+                <br/>
+                <label for="from-link-select" class="text-muted">From:</label>
+                <select id="from-link-select" class="link-select form-control">
+                </select>
+                <label for="to-link-select" class="text-muted">To:</label>
+                <select id="to-link-select" class="link-select form-control">
+                </select>
+                <button type="button" id="add-link-btn" class="add-input-inner btn btn-success">Add Link</button>
+            </form>
+            <button type="button" class="btn btn-danger">Delete Node</button>
           <button type="button" class="btn btn-info">Info</button>
         </div>    
     </div>
@@ -44,7 +55,6 @@
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="~/js/layout.js"></script>
 
-<!-- Modal -->
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

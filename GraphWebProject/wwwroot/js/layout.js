@@ -2,24 +2,65 @@ var app;
 
 window.onload = function () {
     app = new App();
-    app.init();
-     $("#add-node-btn").click(function (){
+    app.reload();
+     $("#add-node-btn").click(function (event){
+         if (document.getElementById("add-node-input-id").value.trim() === "" ||
+             document.getElementById("add-node-input-group").value.trim() === "")
+             event.preventDefault();
         var node = {"id":document.getElementById("add-node-input-id").value,"group": document.getElementById("add-node-input-group").value};
-        app.Add(node)
+        app.AddNode(node)
+    });
+     $("#add-link-btn").click(function (){
+         var fromSelect = document.getElementById("from-link-select");
+         var toSelect = document.getElementById("to-link-select");
+         
+        var link = {
+            "source":fromSelect[fromSelect.selectedIndex].value,
+            "target": toSelect[toSelect.selectedIndex].value,
+            "value": 1
+        };
+        app.AddLink(link)
     });
 };
 
-window.onresize = function(event) {
+window.onresize = function() {
     app.reload();
 };
 
 
 function App() {
     var path = "/GraphProvider";
-
+    
     this.reload = function() {
         d3.select("svg").selectAll("*").remove();
-        app.init();
+        app.reloadSelects();
+        app.plot();
+    };
+    
+    this.reloadSelects = function () {
+
+        $('#from-link-select')
+            .find('option')
+            .remove()
+            .end();
+        
+        $('#to-link-select')
+            .find('option')
+            .remove()
+            .end();
+        
+        $.getJSON( "/GraphProvider/GetAllNodes", function( data ) {
+            var items = [];
+            $.each( data, function( key, val ) {
+                $('<option/>').val(val.id).html(val.id).appendTo('#from-link-select');
+            });
+        });
+        $.getJSON( "/GraphProvider/GetAllNodes", function( data ) {
+            var items = [];
+            $.each( data, function( key, val ) {
+                $('<option/>').val(val.id).html(val.id).appendTo('#to-link-select');
+            });
+        });
     };
 
     this.change = function (newPath) {
@@ -27,10 +68,10 @@ function App() {
         this.reload();
     };
 
-    this.Add = function (node) {
+    this.AddNode = function (node) {
         $.ajax({
             type: "POST",
-            url: "http://localhost:5000/GraphProvider/Create",
+            url: "/GraphProvider/AddNode",
             contentType: 'application/json',
             data: JSON.stringify(node),
         }).done(function () {
@@ -40,7 +81,20 @@ function App() {
         });
     };
 
-    this.init = function() {
+   this.AddLink = function (link) {
+        $.ajax({
+            type: "POST",
+            url: "/GraphProvider/AddLink",
+            contentType: 'application/json',
+            data: JSON.stringify(link),
+        }).done(function () {
+            app.reload();
+        }).fail(function (msg) {
+            view.error(msg)
+        });
+    };
+
+    this.plot = function() {
         var el   = document.getElementById("svg-main"); 
         var rect = el.getBoundingClientRect(); 
         

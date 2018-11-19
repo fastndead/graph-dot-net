@@ -5,19 +5,28 @@ namespace GraphWebProject.Controllers
 {
     public class GraphProvider : Controller
     {
-        //public Graph MainGraph = new Graph();
-        // GET
         public JsonResult Index()
         {
             return Json(Startup.MainGraph);
         }
+        
+        [HttpGet]
+        public JsonResult GetAllNodes()
+        {
+            if (Startup.MainGraph.nodes.Count != 0)
+            {
+                return Json(Startup.MainGraph.nodes); 
+            }
+
+            return Json("");
+        }
 
         [HttpPost]
-        public IActionResult Create([FromBody]Graph.Node node)
+        public IActionResult AddNode([FromBody]Graph.Node node)
         {
             try
             {
-                Startup.MainGraph.AddNode(node.id, node.group);
+                Startup.MainGraph.AddNode(node);
             }
             catch 
             {
@@ -28,11 +37,11 @@ namespace GraphWebProject.Controllers
         }
         
         [HttpPost]
-        public IActionResult Update(string source, string target, int value)
+        public IActionResult AddLink([FromBody]Graph.Link link)
         {
             try
             {
-                Startup.MainGraph.AddLink(source, target, value);
+                Startup.MainGraph.AddLink(link);
             }
             catch (Exception e)
             {
