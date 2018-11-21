@@ -24,31 +24,64 @@
 
 
 <div class="row bg-light">
-    <div class="col-8">
+    <div class="col-8 graph-area">
         <svg id = "svg-main" class="bg-white" width="80%" height="500"></svg>
     </div>
-    <div class="col-4">
+    <div class="col-4 toolbar-area">
         <div class="container bg-light">
-            <h2>Actions</h2>
-            <form id="add-node-form" class="form-add">
-                <label for="add-node-form" class="text-dark">Node addition</label>
-                <input type="text" id="add-node-input-id" class="add-input-inner form-control" placeholder="Node name"/>
-                <input type="text" id="add-node-input-group" class="add-input-inner form-control" placeholder="Node group"/>
-                <button type="button" id="add-node-btn" class="add-input-inner btn btn-success">Add Node</button>
-            </form>
-            <form id="add-link-form" class="form-add">
-                <label for="add-link-form" class="text-dark">Link addition</label>
-                <br/>
-                <label for="from-link-select" class="text-muted">From:</label>
-                <select id="from-link-select" class="link-select form-control">
-                </select>
-                <label for="to-link-select" class="text-muted">To:</label>
-                <select id="to-link-select" class="link-select form-control">
-                </select>
-                <button type="button" id="add-link-btn" class="add-input-inner btn btn-success">Add Link</button>
-            </form>
-            <button type="button" class="btn btn-danger">Delete Node</button>
-          <button type="button" class="btn btn-info">Info</button>
+                <h2>Actions</h2>
+            <div class="row">
+                <div class="col">
+                    <form id="add-node-form" class="form">
+                        <label for="add-node-form" class="text-dark">Node addition</label>
+                        <label for="add-node-input-id" class="text-muted">Node name:</label>
+                        <input type="text" id="add-node-input-id" class="add-input-inner form-control"/>
+                        <label for="add-node-input-group" class="text-muted">Node group:</label>
+                        <input type="text" id="add-node-input-group" class="add-input-inner form-control"/>
+                        <button type="button" id="add-node-btn" class="add-input-inner btn btn-success">Add Node</button>
+                    </form>
+                </div>
+                <div class="col">
+                    <form id="add-link-form" class="form">
+                        <label for="add-link-form" class="text-dark">Link addition</label>
+                        <br/>
+                        <label for="from-link-select" class="text-muted">From:</label>
+                        <select id="from-link-select" class="link-select form-control">
+                        </select>
+                        <label for="to-link-select" class="text-muted">To:</label>
+                        <select id="to-link-select" class="link-select form-control">
+                        </select>
+                        <button type="button" id="add-link-btn" class="add-input-inner btn btn-success">Add Link</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <form id="delete-node-form" class="form">
+                        <label for="delete-node-form" class="text-dark">Node delition</label>
+                        <br/>
+                        <label for="node-to-delete-select" class="text-muted">From:</label>
+                        <select id="node-to-delete-select" class="link-select form-control">
+                        </select>
+                        <button type="button" id="delete-node-btn" class="btn btn-danger">Delete Node</button>
+                    </form>
+                </div>
+
+                <div class="col">
+                    <form id="delete-link-form" class="form">
+                        <label for="delete-link-form" class="text-dark">Link delition</label>
+                        <br/>
+                        <label for="link-to-delete-select" class="text-muted">From:</label>
+                        <select id="link-to-delete-select" class="link-select form-control">
+                        </select>
+                        <button type="button" class="btn btn-danger">Delete Node</button>
+                    </form>
+                </div>
+            </div>
+
+
+            <button type="button" class="btn btn-info">Info</button>
         </div>    
     </div>
 </div>

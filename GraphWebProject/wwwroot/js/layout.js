@@ -21,6 +21,10 @@ window.onload = function () {
         };
         app.AddLink(link)
     });
+    $("#delete-node-btn").click( function() {
+        let deleteSelect = document.getElementById("node-to-delete-select");
+        app.deleteNode({"id": deleteSelect[deleteSelect.selectedIndex].value})
+    })
 };
 
 window.onresize = function() {
@@ -31,6 +35,19 @@ window.onresize = function() {
 function App() {
     var path = "/GraphProvider";
     
+    this.deleteNode = function (node) {
+        $.ajax({
+            type: "DELETE",
+            url: "/GraphProvider/DeleteNode",
+            contentType: 'application/json',
+            data: JSON.stringify(node),
+        }).done(function () {
+            app.reload();
+        }).fail(function (msg) {
+            view.error(msg)
+        });
+    }
+    
     this.reload = function() {
         d3.select("svg").selectAll("*").remove();
         app.reloadSelects();
@@ -39,26 +56,20 @@ function App() {
     
     this.reloadSelects = function () {
 
-        $('#from-link-select')
-            .find('option')
-            .remove()
-            .end();
+        function removeOptions(select){
+            select.find('option').remove().end();
+        }
         
-        $('#to-link-select')
-            .find('option')
-            .remove()
-            .end();
+        removeOptions($('#from-link-select'));
+        removeOptions($('#to-link-select'));
+        removeOptions($('#node-to-delete-select'));
         
         $.getJSON( "/GraphProvider/GetAllNodes", function( data ) {
             var items = [];
             $.each( data, function( key, val ) {
                 $('<option/>').val(val.id).html(val.id).appendTo('#from-link-select');
-            });
-        });
-        $.getJSON( "/GraphProvider/GetAllNodes", function( data ) {
-            var items = [];
-            $.each( data, function( key, val ) {
                 $('<option/>').val(val.id).html(val.id).appendTo('#to-link-select');
+                $('<option/>').val(val.id).html(val.id).appendTo('#node-to-delete-select');
             });
         });
     };

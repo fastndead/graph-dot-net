@@ -21,6 +21,22 @@ namespace GraphWebProject.Controllers
             return Json("");
         }
 
+        [HttpDelete]
+        public IActionResult DeleteNode([FromBody] Graph.Node node)
+        {
+            try
+            {
+                Startup.MainGraph.DeleteNode(node);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return StatusCode(500);
+            }
+
+            return NoContent();
+        }
+
         [HttpPost]
         public IActionResult AddNode([FromBody]Graph.Node node)
         {
@@ -28,8 +44,9 @@ namespace GraphWebProject.Controllers
             {
                 Startup.MainGraph.AddNode(node);
             }
-            catch 
+            catch (Exception e)
             {
+                Console.WriteLine(e);
                 return StatusCode(500);
             }
 
@@ -45,6 +62,7 @@ namespace GraphWebProject.Controllers
             }
             catch (Exception e)
             {
+                Console.WriteLine(e);
                 return StatusCode(500);
             }
 

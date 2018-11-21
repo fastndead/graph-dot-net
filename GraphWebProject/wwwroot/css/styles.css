@@ -5,21 +5,27 @@ svg{
     margin-right: 10%;
     margin-top: 10px;
     align-self: center;
+    border-radius: 1000px;
 }
 
 button{
     margin-bottom: 10px!important;
 }
 
-.form-add{
-    border: 1px solid #858688;
-    padding: 10px;
-    width: 80%;
+.toolbar-area{
+    padding-right: 50px!important;
 }
 
-.link-select{
-    margin-bottom: 10px;
-    
+.text-muted{
+    font-size: smaller;
+    margin-bottom: 0;
+}
+
+.form{
+    border: 1px solid #858688;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
 }
 
 .add-input-inner{
@@ -29,6 +35,10 @@ button{
     width: 100%;
 }
 
+.link-select, .add-input-inner{
+    margin-bottom: 10px!important;
+    margin-top: 0!important;
+}
 
 /* D3 CSS BEGIN*/
 .links line {

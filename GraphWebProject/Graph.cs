@@ -56,6 +56,33 @@ namespace GraphWebProject
             links = new List<Link>();
         }
 
+        public void DeleteNode(Node node)
+        {
+            bool found = false;
+            for (int i = 0; i < nodes.Count; i++)
+            {
+                if (nodes[i].id == node.id)
+                {
+                    found = true;
+                    nodes.Remove(nodes[i]);
+                    i--;
+                }
+            }
+
+            if (!found)
+            {
+                throw new Exception("No such node!");
+            }
+            
+            foreach (var link in this.links)
+            {
+                if (link.source == node.id || link.target == node.id)
+                {
+                    this.links.Remove(link);
+                }
+            }
+        }
+
         public void AddNode(string id, int group)
         {
             this.nodes.Add(new Node(id,group));
