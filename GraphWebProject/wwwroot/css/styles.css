@@ -1,11 +1,14 @@
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 svg{
     box-shadow: 0px 0px 30px black;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 10px;
     align-self: center;
-    border-radius: 1000px;
+    border-radius: 8px;
 }
 
 button{

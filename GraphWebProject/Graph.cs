@@ -82,6 +82,27 @@ namespace GraphWebProject
                 }
             }
         }
+        
+        public void DeleteLink(Link link)
+        {
+            bool found = false;
+            for (int i = 0; i < links.Count; i++)
+            {
+                if (links[i].source == link.source && links[i].target == link.target)
+                {
+                    found = true;
+                    links.Remove(links[i]);
+                    i--;
+                }
+            }
+
+            if (!found)
+            {
+                throw new Exception("No such link!");
+            }
+        }
+        
+        
 
         public void AddNode(string id, int group)
         {

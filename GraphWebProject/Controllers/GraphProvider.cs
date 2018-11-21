@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GraphWebProject.Controllers
@@ -21,12 +22,38 @@ namespace GraphWebProject.Controllers
             return Json("");
         }
 
+        [HttpGet]
+        public JsonResult GetAllConnectionsString()
+        {
+            if (Startup.MainGraph.nodes.Count != 0)
+            {
+                return Json(Startup.MainGraph.links);
+            }
+
+            return Json("");
+        }
+
         [HttpDelete]
         public IActionResult DeleteNode([FromBody] Graph.Node node)
         {
             try
             {
                 Startup.MainGraph.DeleteNode(node);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return StatusCode(500);
+            }
+
+            return NoContent();
+        }
+        [HttpDelete]
+        public IActionResult DeleteLink([FromBody] Graph.Link link)
+        {
+            try
+            {
+                Startup.MainGraph.DeleteLink(link);
             }
             catch (Exception e)
             {

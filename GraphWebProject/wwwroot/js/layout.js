@@ -22,8 +22,15 @@ window.onload = function () {
         app.AddLink(link)
     });
     $("#delete-node-btn").click( function() {
-        let deleteSelect = document.getElementById("node-to-delete-select");
-        app.deleteNode({"id": deleteSelect[deleteSelect.selectedIndex].value})
+        let deleteNodeSelect = document.getElementById("node-to-delete-select");
+        app.deleteNode({"id": deleteNodeSelect[deleteNodeSelect.selectedIndex].value})
+    })
+    
+    $("#delete-link-btn").click(function () {
+        let deleteLinkSelect = document.getElementById("link-to-delete-select");
+        let target = deleteLinkSelect[deleteLinkSelect.selectedIndex].innerHTML.split(" - ")[0];
+        let source = deleteLinkSelect[deleteLinkSelect.selectedIndex].innerHTML.split(" - ")[1];
+        app.deleteLink({"source": source, "target": target})
     })
 };
 
@@ -34,6 +41,19 @@ window.onresize = function() {
 
 function App() {
     var path = "/GraphProvider";
+    
+    this.deleteLink = function (link) {
+        $.ajax({
+            type: "DELETE",
+            url: "/GraphProvider/DeleteLink",
+            contentType: 'application/json',
+            data: JSON.stringify(link),
+        }).done(function () {
+            app.reload();
+        }).fail(function (msg) {
+            view.error(msg)
+        });
+    }
     
     this.deleteNode = function (node) {
         $.ajax({
@@ -46,7 +66,7 @@ function App() {
         }).fail(function (msg) {
             view.error(msg)
         });
-    }
+    };
     
     this.reload = function() {
         d3.select("svg").selectAll("*").remove();
@@ -63,6 +83,7 @@ function App() {
         removeOptions($('#from-link-select'));
         removeOptions($('#to-link-select'));
         removeOptions($('#node-to-delete-select'));
+        removeOptions($('#link-to-delete-select'));
         
         $.getJSON( "/GraphProvider/GetAllNodes", function( data ) {
             var items = [];
@@ -70,6 +91,12 @@ function App() {
                 $('<option/>').val(val.id).html(val.id).appendTo('#from-link-select');
                 $('<option/>').val(val.id).html(val.id).appendTo('#to-link-select');
                 $('<option/>').val(val.id).html(val.id).appendTo('#node-to-delete-select');
+            });
+        });
+        $.getJSON( "/GraphProvider/GetAllConnectionsString", function( data ) {
+            var items = [];
+            $.each( data, function( key, val ) {
+                $('<option/>').val(val.target + " - " + val.source).html(val.target + " - " + val.source).appendTo('#link-to-delete-select');
             });
         });
     };
