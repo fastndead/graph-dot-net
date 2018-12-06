@@ -43,6 +43,17 @@ button{
     margin-top: 0!important;
 }
 
+
+#alert{
+    position:absolute;
+    z-index:1400;
+   top:2%;
+    right:4%;
+    margin:0px auto;
+  text-align:center;
+    display:none;
+}
+
 /* D3 CSS BEGIN*/
 .links line {
   stroke: #999;

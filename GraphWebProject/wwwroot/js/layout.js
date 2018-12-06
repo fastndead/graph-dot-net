@@ -3,69 +3,89 @@ var app;
 window.onload = function () {
     app = new App();
     app.reload();
-     $("#add-node-btn").click(function (event){
-         if (document.getElementById("add-node-input-id").value.trim() === "" ||
-             document.getElementById("add-node-input-group").value.trim() === "")
-             event.preventDefault();
+
+    $("#add-node-btn").click(function (event){
+        if (document.getElementById("add-node-input-id").value.trim() === "" ||
+            document.getElementById("add-node-input-group").value.trim() === "")
+            {
+                app.alert("Enter name and group of node");
+                return;
+            }
+        
         var node = {"id":document.getElementById("add-node-input-id").value,"group": document.getElementById("add-node-input-group").value};
         app.AddNode(node)
     });
-     $("#add-link-btn").click(function (){
-         var fromSelect = document.getElementById("from-link-select");
-         var toSelect = document.getElementById("to-link-select");
-         
-        var link = {
-            "source":fromSelect[fromSelect.selectedIndex].value,
-            "target": toSelect[toSelect.selectedIndex].value,
-            "value": 1
-        };
+
+    $("#add-link-btn").click(function (){
+        var fromSelect = document.getElementById("from-link-select");
+        var toSelect = document.getElementById("to-link-select");
+        try
+        {
+            var link = {
+                "source":fromSelect[fromSelect.selectedIndex].value,
+                "target": toSelect[toSelect.selectedIndex].value,
+                "value": 1
+            };
+        }
+        catch
+        {
+            app.alert("Select source and target correctly");
+            return
+        }
         app.AddLink(link)
     });
+
     $("#delete-node-btn").click( function() {
-        let deleteNodeSelect = document.getElementById("node-to-delete-select");
-        app.deleteNode({"id": deleteNodeSelect[deleteNodeSelect.selectedIndex].value})
-    })
+        try 
+        {
+            let deleteNodeSelect = document.getElementById("node-to-delete-select");            
+            app.deleteNode({"id": deleteNodeSelect[deleteNodeSelect.selectedIndex].value})
+        }
+        catch
+        {
+            app.alert("Select nodes correctly");
+            return
+        }
+    });
     
     $("#delete-link-btn").click(function () {
-        let deleteLinkSelect = document.getElementById("link-to-delete-select");
-        let target = deleteLinkSelect[deleteLinkSelect.selectedIndex].innerHTML.split(" - ")[0];
-        let source = deleteLinkSelect[deleteLinkSelect.selectedIndex].innerHTML.split(" - ")[1];
+        try
+        {
+            let deleteLinkSelect = document.getElementById("link-to-delete-select");
+            let target = deleteLinkSelect[deleteLinkSelect.selectedIndex].innerHTML.split(" - ")[0];
+            let source = deleteLinkSelect[deleteLinkSelect.selectedIndex].innerHTML.split(" - ")[1];
+        }
+        catch
+        {
+            app.alert("Select links correctly");
+            return
+        }
+        
         app.deleteLink({"source": source, "target": target})
-    })
+    });
 };
 
 window.onresize = function() {
     app.reload();
 };
 
-
 function App() {
     var path = "/GraphProvider";
+
+    this.alert = function(msg){
+        $("#alert").fadeIn();
+        $("#error-text").text(msg);
+        window.setTimeout(function () {
+            $("#alert").fadeOut(300)
+        }, 3000);
+    }
     
     this.deleteLink = function (link) {
-        $.ajax({
-            type: "DELETE",
-            url: "/GraphProvider/DeleteLink",
-            contentType: 'application/json',
-            data: JSON.stringify(link),
-        }).done(function () {
-            app.reload();
-        }).fail(function (msg) {
-            view.error(msg)
-        });
+        app.AjaxQuery("DELETE","/GraphProvider/deleteLink",link);
     }
     
     this.deleteNode = function (node) {
-        $.ajax({
-            type: "DELETE",
-            url: "/GraphProvider/DeleteNode",
-            contentType: 'application/json',
-            data: JSON.stringify(node),
-        }).done(function () {
-            app.reload();
-        }).fail(function (msg) {
-            view.error(msg)
-        });
+        app.AjaxQuery("DELETE", "/GraphProvider/DeleteNode", node);
     };
     
     this.reload = function() {
@@ -107,29 +127,11 @@ function App() {
     };
 
     this.AddNode = function (node) {
-        $.ajax({
-            type: "POST",
-            url: "/GraphProvider/AddNode",
-            contentType: 'application/json',
-            data: JSON.stringify(node),
-        }).done(function () {
-            app.reload();
-        }).fail(function (msg) {
-            view.error(msg)
-        });
+        app.AjaxQuery("POST", "/GraphProvider/AddNode", node)
     };
 
-   this.AddLink = function (link) {
-        $.ajax({
-            type: "POST",
-            url: "/GraphProvider/AddLink",
-            contentType: 'application/json',
-            data: JSON.stringify(link),
-        }).done(function () {
-            app.reload();
-        }).fail(function (msg) {
-            view.error(msg)
-        });
+    this.AddLink = function (link) {
+    app.AjaxQuery("POST", "/GraphProvider/AddLink", link);
     };
 
     this.plot = function() {
@@ -234,11 +236,19 @@ function App() {
             d.fx = null;
             d.fy = null;
         }
+    };   
+    this.AjaxQuery = function(type,url,data){
+        $.ajax({
+            type: type,
+            url: url,
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+        }).done(function () {
+            app.reload();
+        }).fail(function (msg) {
+            view.error(msg)
+        });
+    };
 
 };
-
-}
-
-
-
-
+    
