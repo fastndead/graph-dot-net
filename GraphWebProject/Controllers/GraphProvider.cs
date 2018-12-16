@@ -22,6 +22,24 @@ namespace GraphWebProject.Controllers
             return Json("");
         }
 
+        [HttpDelete]
+        public IActionResult Reset()
+        {
+            try
+            {
+                Startup.MainGraph.Reset();
+                Startup.Task = false;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return StatusCode(500);
+            }
+
+            return NoContent();
+        }
+
+
         [HttpGet]
         public JsonResult GetAllConnectionsString()
         {
@@ -79,6 +97,46 @@ namespace GraphWebProject.Controllers
 
             return NoContent();
         }
+        
+        [HttpGet]
+        public JsonResult CheckTask()
+        {
+            return Json(Startup.Task);
+        }
+
+        [HttpGet]
+        public JsonResult CheckCompleteGraph()
+        {
+            return Json(Startup.MainGraph.CheckIfComplete());
+        }
+
+        [HttpPost]
+        public IActionResult SetTask([FromBody]bool task)
+        {
+            if (task == false)
+            {
+                Startup.MainGraph.Reset();
+            }
+            Startup.Task = task;
+            return NoContent();
+        }
+
+        [HttpPost]
+        public IActionResult AddNodes([FromBody]Graph.Node[] nodes)
+        {
+            try
+            {
+                Startup.MainGraph.AddNodes(nodes);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return StatusCode(500);
+            }
+
+            return NoContent();
+        }
+        
         
         [HttpPost]
         public IActionResult AddLink([FromBody]Graph.Link link)

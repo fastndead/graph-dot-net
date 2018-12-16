@@ -3,12 +3,14 @@ var app;
 window.onload = function () {
     app = new App();
     app.reload();
+    app.checkTask();
+
 
     $("#add-node-btn").click(function (event){
         if (document.getElementById("add-node-input-id").value.trim() === "" ||
             document.getElementById("add-node-input-group").value.trim() === "")
             {
-                app.alert("Enter name and group of node");
+                app.alert("Error. ","Enter name and group of node");
                 return;
             }
         
@@ -29,7 +31,7 @@ window.onload = function () {
         }
         catch
         {
-            app.alert("Select source and target correctly");
+            app.alert("Error. ","Select source and target correctly");
             return
         }
         app.AddLink(link)
@@ -43,7 +45,7 @@ window.onload = function () {
         }
         catch
         {
-            app.alert("Select nodes correctly");
+            app.alert("Error. ","Select nodes correctly");
             return
         }
     });
@@ -57,12 +59,43 @@ window.onload = function () {
         }
         catch
         {
-            app.alert("Select links correctly");
+            app.alert("Error. ","Select links correctly");
             return
         }
         
         app.deleteLink({"source": source, "target": target})
     });
+    
+    $("#complete-graph-btn").click(function () {
+        var nodes = []
+        for (var i = 3; i >= 1; i--) {
+            nodes.push({"id" : i, "group" : i});
+        }
+        app.AjaxQuery("POST", "/GraphProvider/AddNodes", nodes, app.reload);
+        app.AjaxQuery("POST", "/GraphProvider/SetTask", true);
+    })
+    
+    $("#check-complete-graph-btn").click(function () {
+        if(app.AjaxQuery("GET", "/GraphProvider/CheckCompleteGraph", null, function (d) {
+            if(d)
+            {
+                app.AjaxQuery("POST","/GraphProvider/SetTask", false, function () {
+                    app.alertSuccess("Nice! ", "You have completed the task!");
+                    app.reset();
+                    app.reload();
+                });
+            }
+            else {
+                app.alert("Mistake. ","Yout graph isn't complete yet!")
+            }
+        }));
+    })
+    
+    $("#reset-btn").click(function() {
+            app.reset();
+        }
+    )
+
 };
 
 window.onresize = function() {
@@ -71,28 +104,79 @@ window.onresize = function() {
 
 function App() {
     var path = "/GraphProvider";
-
-    this.alert = function(msg){
-        $("#alert").fadeIn();
-        $("#error-text").text(msg);
-        window.setTimeout(function () {
-            $("#alert").fadeOut(300)
-        }, 3000);
+    
+    this.reset = function () {
+        app.AjaxQuery("DELETE", "/GraphProvider/Reset", null, function () {
+            app.reload()
+        })  
+    };
+    
+    this.taskStartup = function () {
+        $("#check-complete-graph-btn").prop('disabled', false);
+        $("#complete-graph-modal-btn").prop('disabled', true);
     }
     
+    this.taskEnd = function () {
+        $("#check-complete-graph-btn").prop('disabled', true);
+        $("#complete-graph-modal-btn").prop('disabled', false);
+    }
+
+    this.alert = function(boldMsg, msg){
+        $("#alert").removeClass();
+        $("#alert").addClass("alert alert-danger");
+        $("#alert").fadeIn();
+        $("#error-text-bold").text(boldMsg)
+        $("#error-text").text(msg);
+        if (errorTimeOut !== undefined) {
+            window.clearTimeout(errorTimeOut);
+        }
+        var errorTimeOut = window.setTimeout(function () {
+            $("#alert").fadeOut(300)
+        }, 3000);
+    };
+    
+    this.alertSuccess = function(boldMsg, msg){
+        $("#alert").removeClass();
+        $("#alert").addClass("alert alert-success");
+        $("#alert").fadeIn();
+        $("#error-text-bold").text(boldMsg)
+        $("#error-text").text(msg);
+        if (errorTimeOut !== undefined) {
+            window.clearTimeout(errorTimeOut);
+        }
+        var errorTimeOut = window.setTimeout(function () {
+            $("#alert").fadeOut(300)
+        }, 3000);
+    };
+    
+    
     this.deleteLink = function (link) {
-        app.AjaxQuery("DELETE","/GraphProvider/deleteLink",link);
+        app.AjaxQuery("DELETE","/GraphProvider/deleteLink",link, app.reload);
+
     }
     
     this.deleteNode = function (node) {
-        app.AjaxQuery("DELETE", "/GraphProvider/DeleteNode", node);
+        app.AjaxQuery("DELETE", "/GraphProvider/DeleteNode", node, app.reload);
     };
     
     this.reload = function() {
         d3.select("svg").selectAll("*").remove();
+        app.checkTask();
         app.reloadSelects();
         app.plot();
     };
+    
+    this.checkTask = function () {
+        this.AjaxQuery("GET","/GraphProvider/CheckTask", null, function (d) {
+            if(d)
+            {
+                app.taskStartup();
+            }
+            else {
+                app.taskEnd();
+            }
+        });
+    }
     
     this.reloadSelects = function () {
 
@@ -127,15 +211,16 @@ function App() {
     };
 
     this.AddNode = function (node) {
-        app.AjaxQuery("POST", "/GraphProvider/AddNode", node)
+        app.AjaxQuery("POST", "/GraphProvider/AddNode", node, app.reload)
     };
 
     this.AddLink = function (link) {
-    app.AjaxQuery("POST", "/GraphProvider/AddLink", link);
+    app.AjaxQuery("POST", "/GraphProvider/AddLink", link, app.reload);
     };
 
     this.plot = function() {
-        var el   = document.getElementById("svg-main"); 
+        var el = document.getElementById("svg-main");
+
         var rect = el.getBoundingClientRect(); 
         
         var svg = d3.select("svg"),
@@ -170,7 +255,7 @@ function App() {
                 .enter().append("g")
 
             var circles = node.append("circle")
-                .attr("r", 5)
+                .attr("r", 7)
                 .attr("fill", function (d) {
                     return color(d.group);
                 })
@@ -196,6 +281,7 @@ function App() {
                 .on("tick", ticked);
 
             simulation.force("link")
+                .distance(200)
                 .links(graph.links);
 
             function ticked() {
@@ -237,14 +323,19 @@ function App() {
             d.fy = null;
         }
     };   
-    this.AjaxQuery = function(type,url,data){
+    
+    this.AjaxQuery = function(type,url,data, callback){
         $.ajax({
             type: type,
             url: url,
             contentType: 'application/json',
             data: JSON.stringify(data),
-        }).done(function () {
-            app.reload();
+        }).done(function (recievedData) {
+            if(callback !== undefined)
+            {
+                callback(recievedData);
+            }
+            
         }).fail(function (msg) {
             view.error(msg)
         });

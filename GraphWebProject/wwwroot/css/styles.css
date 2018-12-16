@@ -10,6 +10,12 @@ svg{
     align-self: center;
     border-radius: 8px;
 }
+#reset-btn{
+    margin-top: 20px;
+    margin-left: 10%;
+    box-shadow: 0px 0px 30px darkred;
+
+}
 
 button{
     margin-bottom: 10px!important;

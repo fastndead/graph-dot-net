@@ -5,6 +5,7 @@ using Npgsql;
 using Microsoft.ApplicationInsights.Extensibility.Implementation;
 using Newtonsoft.Json;
 using System.IO;
+using System.Linq;
 using Microsoft.IdentityModel.Protocols;
 
 namespace GraphWebProject
@@ -101,27 +102,97 @@ namespace GraphWebProject
                 throw new Exception("No such link!");
             }
         }
-        
-        
+
+
+
+        public void Reset()
+        {
+            nodes.Clear();
+            links.Clear();
+        }
 
         public void AddNode(string id, int group)
         {
+            foreach (var node in nodes)
+            {
+                if(node.id == id)
+                    return;
+            }
             this.nodes.Add(new Node(id,group));
         }
 
-        public void AddNode(Node node)
+        public void AddNode(Node newNode)
         {
-            this.nodes.Add(node);
+            foreach (var node in nodes)
+            {
+                if(node.id == newNode.id)
+                    return;
+            }
+            this.nodes.Add(newNode);
+        }
+
+        public void AddNodes(Node[] nodes)
+        {
+            foreach (var node in nodes)
+            {
+                this.AddNode(node);
+            }
         }
 
         public void AddLink(string source, string target, int value)
         {
+            if (source == target)
+            {
+                return;
+            }
+            foreach (var link in links)
+            {
+                if(link.source == source && link.target == target || link.source == target && link.target == source)
+                    return;
+            }
             this.links.Add(new Link(source, target, value));
         }
 
-        public void AddLink(Link link)
+        public void AddLink(Link newLink)
         {
-            this.links.Add(link);
+            if (newLink.source == newLink.target)
+            {
+                return;
+            }
+            foreach (var link in links)
+            {
+                if(link.source == newLink.source && link.target == newLink.target || 
+                   link.source == newLink.target && link.target == newLink.source)
+                    return;
+            }
+            this.links.Add(newLink);
+        }
+
+        public bool CheckIfComplete()
+        {
+            if (links.Count != nodes.Count * (nodes.Count - 1)/2)
+            {
+                return false;
+            }
+
+            foreach (var node in nodes)
+            {
+                var linkCount = 0;
+                foreach (var link in links)
+                {
+                    if (link.source == node.id || link.target == node.id)
+                    {
+                        linkCount++;
+                    }
+                }
+
+                if (linkCount != nodes.Count - 1)
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
 
         public void GetFromDb()//метод заполнения сущности графа с базы данных

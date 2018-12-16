@@ -8,6 +8,28 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="GraphWebProject" t="IncludeRecursive">
         <e p="app.config" t="Include" />
+        <e p="auto-save" t="Include">
+          <e p=".gitignore" t="Include" />
+          <e p="auto_save.py" t="Include" />
+          <e p="auto_save.sublime-settings" t="Include" />
+          <e p="demo.gif" t="Include" />
+          <e p="Main.sublime-commands" t="Include" />
+          <e p="Main.sublime-menu" t="Include" />
+          <e p="messages" t="Include">
+            <e p="1.0.1.txt" t="Include" />
+            <e p="1.0.2.txt" t="Include" />
+            <e p="1.0.3.txt" t="Include" />
+            <e p="1.0.4.txt" t="Include" />
+            <e p="1.0.5.txt" t="Include" />
+            <e p="1.0.6.txt" t="Include" />
+            <e p="1.0.7.txt" t="Include" />
+            <e p="install.txt" t="Include" />
+          </e>
+          <e p="messages.json" t="Include" />
+          <e p="MIT-License" t="Include" />
+          <e p="README.md" t="Include" />
+          <e p="repository.json" t="Include" />
+        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
           <e p="GraphProvider.cs" t="Include" />

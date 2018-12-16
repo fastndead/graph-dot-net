@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21c7a71c-a92a-46e6-8367-b4a81d5d789c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GraphWebProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GraphWebProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GraphWebProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GraphWebProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GraphWebProject/Controllers/GraphProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/Controllers/GraphProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GraphWebProject/Graph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/Graph.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GraphWebProject/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/Pages/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GraphWebProject/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GraphWebProject/bin/Debug/netcoreapp2.0/GraphWebProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/bin/Debug/netcoreapp2.0/GraphWebProject.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GraphWebProject/bin/Debug/netcoreapp2.0/GraphWebProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/bin/Debug/netcoreapp2.0/GraphWebProject.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/obj/Debug/netcoreapp2.0/GraphWebProject.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GraphWebProject/obj/GraphWebProject.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/obj/GraphWebProject.csproj.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GraphWebProject/obj/GraphWebProject.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/obj/GraphWebProject.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GraphWebProject/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GraphWebProject/wwwroot/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/wwwroot/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GraphWebProject/wwwroot/js/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/GraphWebProject/wwwroot/js/layout.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -103,32 +112,39 @@
     <session id="886400627">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
+          <entry key="project.closed" value="24" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="3" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="config" value="4" />
-          <entry key="cs" value="25" />
-          <entry key="cshtml" value="2" />
-          <entry key="css" value="5" />
-          <entry key="js" value="1" />
-          <entry key="json" value="8" />
+          <entry key="cs" value="32" />
+          <entry key="cshtml" value="5" />
+          <entry key="csproj" value="1" />
+          <entry key="css" value="7" />
+          <entry key="js" value="4" />
+          <entry key="json" value="10" />
           <entry key="links_seq" value="1" />
           <entry key="nodes_seq" value="1" />
           <entry key="sql" value="10" />
@@ -139,13 +155,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="25" />
-          <entry key="CSS" value="5" />
+          <entry key="C#" value="32" />
+          <entry key="CSS" value="7" />
           <entry key="Config" value="4" />
+          <entry key="Csproj" value="1" />
           <entry key="Database Element" value="8" />
-          <entry key="JSON" value="8" />
-          <entry key="JavaScript" value="1" />
-          <entry key="Razor" value="2" />
+          <entry key="JSON" value="10" />
+          <entry key="JavaScript" value="4" />
+          <entry key="Razor" value="5" />
           <entry key="SQL" value="8" />
           <entry key="Scratch" value="4" />
           <entry key="XML" value="1" />
@@ -155,10 +172,10 @@
         <counts>
           <entry key="cell" value="12" />
           <entry key="config" value="24" />
-          <entry key="cs" value="4355" />
-          <entry key="cshtml" value="1444" />
-          <entry key="css" value="532" />
-          <entry key="js" value="1568" />
+          <entry key="cs" value="5592" />
+          <entry key="cshtml" value="1558" />
+          <entry key="css" value="546" />
+          <entry key="js" value="3093" />
           <entry key="json" value="37" />
           <entry key="sql" value="686" />
           <entry key="txt" value="44" />
@@ -166,13 +183,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="4355" />
-          <entry key="CSS" value="532" />
+          <entry key="C#" value="5592" />
+          <entry key="CSS" value="546" />
           <entry key="Config" value="24" />
           <entry key="JSON" value="37" />
-          <entry key="JavaScript" value="1568" />
+          <entry key="JavaScript" value="3093" />
           <entry key="PLAIN_TEXT" value="44" />
-          <entry key="Razor" value="1444" />
+          <entry key="Razor" value="1558" />
           <entry key="SQL" value="185" />
           <entry key="Scratch" value="513" />
         </counts>
@@ -180,7 +197,198 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GraphWebProject/Startup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+              <folding>
+                <marker date="1544963728832" expanded="false" signature="6:278" ph="..." />
+                <marker date="1544963728832" expanded="true" signature="305:1260" ph="{...}" />
+                <marker date="1544963728832" expanded="true" signature="332:1258" ph="{...}" />
+                <marker date="1544963728832" expanded="true" signature="450:665" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
+                <marker date="1544963728832" expanded="true" signature="732:848" ph="{...}" />
+                <marker date="1544963728832" expanded="true" signature="1036:1252" ph="{...}" />
+                <marker date="1544963728832" expanded="true" signature="1113:1227" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GraphWebProject/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+              <folding>
+                <marker date="1539623040935" expanded="false" signature="6:255" ph="..." />
+                <marker date="1539623040935" expanded="true" signature="282:603" ph="{...}" />
+                <marker date="1539623040935" expanded="true" signature="309:601" ph="{...}" />
+                <marker date="1539623040935" expanded="true" signature="362:420" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GraphWebProject/Graph.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="182" column="72" selection-start-line="182" selection-start-column="72" selection-end-line="182" selection-end-column="72" />
+              <folding>
+                <marker date="1544971827256" expanded="false" signature="6:255" ph="..." />
+                <marker date="1544971827256" expanded="true" signature="282:6227" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="337:6225" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="369:743" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="559:691" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="718:733" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="770:1258" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="1028:1206" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="1233:1248" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="1357:1453" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="1496:2153" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="1588:1799" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="1646:1785" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="1824:1906" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="1964:2143" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="2048:2129" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="2204:2666" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="2296:2549" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="2396:2535" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="2574:2656" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="2697:2771" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="2822:3020" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="2872:2962" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="3063:3258" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="3113:3211" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="3302:3426" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="3352:3416" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="3496:3876" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="3540:3592" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="3632:3805" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="3919:4343" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="3979:4031" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="4071:4296" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="4382:5012" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="4458:4516" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="4557:4976" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="4650:4841" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="4742:4823" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="4892:4962" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="5092:6218" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="5301:5683" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="5540:5669" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="5793:6195" ph="{...}" />
+                <marker date="1544971827256" expanded="true" signature="6032:6181" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GraphWebProject/Controllers/GraphProvider.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="120" column="12" selection-start-line="120" selection-start-column="12" selection-end-line="120" selection-end-column="12" />
+              <folding>
+                <marker date="1544970395378" expanded="false" signature="6:79" ph="..." />
+                <marker date="1544970395378" expanded="true" signature="118:3732" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="164:3730" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="204:268" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="335:520" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="397:480" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="579:895" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="605:714" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="746:852" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="967:1151" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="1029:1111" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="1241:1528" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="1267:1347" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="1379:1485" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="1617:1904" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="1643:1723" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="1755:1861" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="1988:2272" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="2014:2091" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="2123:2229" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="2337:2396" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="2462:2544" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="2622:2809" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="2663:2734" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="2897:3183" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="2923:3002" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="3034:3140" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="3284:3568" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="3310:3387" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="3419:3525" ph="{...}" />
+                <marker date="1544970395378" expanded="true" signature="3604:3724" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GraphWebProject/wwwroot/js/layout.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GraphWebProject/Pages/Index.cshtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+              <folding>
+                <marker date="1544970039643" expanded="true" signature="54:5710" ph="&lt;html.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="61:655" ph="&lt;head.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="656:5702" ph="&lt;body.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="680:805" ph="&lt;div.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="764:798" ph="&lt;span.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="808:1004" ph="&lt;div.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="836:997" ph="&lt;div.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="1007:4380" ph="&lt;div.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="1038:1253" ph="&lt;div.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="1258:4373" ph="&lt;div.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="1299:4358" ph="&lt;div.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="1377:2974" ph="&lt;div.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="1412:2156" ph="&lt;div.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="1451:2133" ph="&lt;form.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="2173:2955" ph="&lt;div.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="2211:2932" ph="&lt;form.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="2482:2579" ph="&lt;select.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="2687:2782" ph="&lt;select.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="2988:4043" ph="&lt;div.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="3022:3514" ph="&lt;div.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="3060:3491" ph="&lt;form.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="3250:3352" ph="&lt;select.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="3532:4024" ph="&lt;div.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="3570:4001" ph="&lt;form.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="3760:3862" ph="&lt;select.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="4385:5123" ph="&lt;div.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="4443:5116" ph="&lt;div.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="4479:5104" ph="&lt;div.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="4519:4704" ph="&lt;div.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="4717:4912" ph="&lt;div.../&gt;" />
+                <marker date="1544970039643" expanded="true" signature="4925:5089" ph="&lt;div.../&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GraphWebProject/wwwroot/css/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -189,8 +397,19 @@
       <find>~</find>
       <find>console</find>
       <find>add-input-inner</find>
-      <find>svg</find>
       <find>info</find>
+      <find>btn</find>
+      <find>svg</find>
+      <find>GraphWebProject</find>
+      <find>complete-graph-btn</find>
+      <find>reload</find>
+      <find>SetTask</find>
+      <find>AjaxQuery</find>
+      <find>settask</find>
+      <find>error</find>
+      <find>alert</find>
+      <find>reset</find>
+      <find>force</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -231,13 +450,13 @@
         <option value="$PROJECT_DIR$/GraphWebProject/scripts/nodes-script.sql" />
         <option value="$PROJECT_DIR$/GraphWebProject/scripts/script.sql" />
         <option value="$PROJECT_DIR$/GraphWebProject/app.config" />
-        <option value="$PROJECT_DIR$/GraphWebProject/Startup.cs" />
         <option value="$PROJECT_DIR$/GraphWebProject/JsonParser.cs" />
+        <option value="$PROJECT_DIR$/GraphWebProject/Startup.cs" />
         <option value="$PROJECT_DIR$/GraphWebProject/wwwroot/css/styles.css" />
-        <option value="$PROJECT_DIR$/GraphWebProject/Controllers/GraphProvider.cs" />
-        <option value="$PROJECT_DIR$/GraphWebProject/Graph.cs" />
-        <option value="$PROJECT_DIR$/GraphWebProject/wwwroot/js/layout.js" />
         <option value="$PROJECT_DIR$/GraphWebProject/Pages/Index.cshtml" />
+        <option value="$PROJECT_DIR$/GraphWebProject/Controllers/GraphProvider.cs" />
+        <option value="$PROJECT_DIR$/GraphWebProject/wwwroot/js/layout.js" />
+        <option value="$PROJECT_DIR$/GraphWebProject/Graph.cs" />
       </list>
     </option>
   </component>
@@ -265,6 +484,43 @@
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="GraphWebProject" type="24d0babc:SolutionExplorerModelNode" />
             </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="GraphWebProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="GraphWebProject" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="GraphWebProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="GraphWebProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="GraphWebProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="GraphWebProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Pages" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="GraphWebProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="GraphWebProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="wwwroot" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="GraphWebProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="GraphWebProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="wwwroot" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="css" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="GraphWebProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="GraphWebProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="wwwroot" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="js" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -280,6 +536,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/ASP.NET MVC Application with a Custom Layout/C#/WebApplication.sln" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -348,6 +605,13 @@
       <workItem from="1543399337001" duration="989000" />
       <workItem from="1543400611711" duration="18000" />
       <workItem from="1544091527587" duration="4000" />
+      <workItem from="1544214791051" duration="235000" />
+      <workItem from="1544442855346" duration="278000" />
+      <workItem from="1544445591998" duration="3434000" />
+      <workItem from="1544632200760" duration="648000" />
+      <workItem from="1544636138290" duration="636000" />
+      <workItem from="1544794216864" duration="346000" />
+      <workItem from="1544953328494" duration="9981000" />
     </task>
     <task id="LOCAL-00001" summary="Добавление вершин">
       <created>1542184635920</created>
@@ -360,7 +624,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64872000" />
+    <option name="totallyTimeSpent" value="80430000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -373,15 +637,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23104435" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19098713" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32891566" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49928468" weight="0.24457832" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.32409638" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -447,6 +712,19 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GraphWebProject/Graph.cs</url>
+          <line>172</line>
+          <properties documentPath="$PROJECT_DIR$/GraphWebProject/Graph.cs" initialLine="172">
+            <startOffsets>
+              <option value="4405" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4458" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -495,29 +773,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/wwwroot/json/NODES1.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-227" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GraphWebProject/scripts/links-script.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="45" selection-start-column="45" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/wwwroot/json/NODES.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4665">
-          <caret line="311" column="8" selection-start-line="311" selection-start-column="8" selection-end-line="311" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -537,13 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/899ABC88-C3F1-4C7D-B7BA-444AD3BDFC76/34/52c85627/ExecutionContext.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="99" column="6" selection-start-line="99" selection-start-column="6" selection-end-line="99" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GraphWebProject/JsonParser.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -551,52 +803,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/Startup.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/Graph.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="126" column="26" selection-start-line="126" selection-start-column="26" selection-end-line="126" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/Controllers/GraphProvider.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/wwwroot/js/layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/Pages/Index.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="99" column="32" selection-start-line="99" selection-start-column="32" selection-end-line="99" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GraphWebProject/Pages/Index.cshtml.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GraphWebProject/wwwroot/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -611,6 +821,206 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/wwwroot/json/NODES1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/wwwroot/json/NODES.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="311" column="8" selection-start-line="311" selection-start-column="8" selection-end-line="311" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/GraphWebProject.csproj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/899ABC88-C3F1-4C7D-B7BA-444AD3BDFC76/34/52c85627/ExecutionContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="99" column="6" selection-start-line="99" selection-start-column="6" selection-end-line="99" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <marker date="1544963728832" expanded="false" signature="6:278" ph="..." />
+            <marker date="1544963728832" expanded="true" signature="305:1260" ph="{...}" />
+            <marker date="1544963728832" expanded="true" signature="332:1258" ph="{...}" />
+            <marker date="1544963728832" expanded="true" signature="450:665" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
+            <marker date="1544963728832" expanded="true" signature="732:848" ph="{...}" />
+            <marker date="1544963728832" expanded="true" signature="1036:1252" ph="{...}" />
+            <marker date="1544963728832" expanded="true" signature="1113:1227" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+          <folding>
+            <marker date="1539623040935" expanded="false" signature="6:255" ph="..." />
+            <marker date="1539623040935" expanded="true" signature="282:603" ph="{...}" />
+            <marker date="1539623040935" expanded="true" signature="309:601" ph="{...}" />
+            <marker date="1539623040935" expanded="true" signature="362:420" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/Pages/Index.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding>
+            <marker date="1544970039643" expanded="true" signature="54:5710" ph="&lt;html.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="61:655" ph="&lt;head.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="656:5702" ph="&lt;body.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="680:805" ph="&lt;div.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="764:798" ph="&lt;span.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="808:1004" ph="&lt;div.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="836:997" ph="&lt;div.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="1007:4380" ph="&lt;div.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="1038:1253" ph="&lt;div.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="1258:4373" ph="&lt;div.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="1299:4358" ph="&lt;div.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="1377:2974" ph="&lt;div.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="1412:2156" ph="&lt;div.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="1451:2133" ph="&lt;form.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="2173:2955" ph="&lt;div.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="2211:2932" ph="&lt;form.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="2482:2579" ph="&lt;select.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="2687:2782" ph="&lt;select.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="2988:4043" ph="&lt;div.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="3022:3514" ph="&lt;div.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="3060:3491" ph="&lt;form.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="3250:3352" ph="&lt;select.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="3532:4024" ph="&lt;div.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="3570:4001" ph="&lt;form.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="3760:3862" ph="&lt;select.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="4385:5123" ph="&lt;div.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="4443:5116" ph="&lt;div.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="4479:5104" ph="&lt;div.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="4519:4704" ph="&lt;div.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="4717:4912" ph="&lt;div.../&gt;" />
+            <marker date="1544970039643" expanded="true" signature="4925:5089" ph="&lt;div.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/wwwroot/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/wwwroot/js/layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/Controllers/GraphProvider.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="120" column="12" selection-start-line="120" selection-start-column="12" selection-end-line="120" selection-end-column="12" />
+          <folding>
+            <marker date="1544970395378" expanded="false" signature="6:79" ph="..." />
+            <marker date="1544970395378" expanded="true" signature="118:3732" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="164:3730" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="204:268" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="335:520" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="397:480" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="579:895" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="605:714" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="746:852" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="967:1151" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="1029:1111" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="1241:1528" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="1267:1347" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="1379:1485" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="1617:1904" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="1643:1723" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="1755:1861" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="1988:2272" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="2014:2091" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="2123:2229" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="2337:2396" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="2462:2544" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="2622:2809" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="2663:2734" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="2897:3183" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="2923:3002" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="3034:3140" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="3284:3568" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="3310:3387" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="3419:3525" ph="{...}" />
+            <marker date="1544970395378" expanded="true" signature="3604:3724" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphWebProject/Graph.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="182" column="72" selection-start-line="182" selection-start-column="72" selection-end-line="182" selection-end-column="72" />
+          <folding>
+            <marker date="1544971827256" expanded="false" signature="6:255" ph="..." />
+            <marker date="1544971827256" expanded="true" signature="282:6227" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="337:6225" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="369:743" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="559:691" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="718:733" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="770:1258" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="1028:1206" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="1233:1248" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="1357:1453" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="1496:2153" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="1588:1799" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="1646:1785" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="1824:1906" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="1964:2143" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="2048:2129" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="2204:2666" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="2296:2549" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="2396:2535" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="2574:2656" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="2697:2771" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="2822:3020" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="2872:2962" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="3063:3258" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="3113:3211" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="3302:3426" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="3352:3416" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="3496:3876" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="3540:3592" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="3632:3805" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="3919:4343" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="3979:4031" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="4071:4296" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="4382:5012" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="4458:4516" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="4557:4976" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="4650:4841" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="4742:4823" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="4892:4962" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="5092:6218" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="5301:5683" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="5540:5669" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="5793:6195" ph="{...}" />
+            <marker date="1544971827256" expanded="true" signature="6032:6181" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
