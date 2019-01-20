@@ -138,6 +138,13 @@ namespace GraphWebProject
                 this.AddNode(node);
             }
         }
+        public void AddLinks(Link[] links)
+        {
+            foreach (var link in links)
+            {
+                this.AddLink(link);
+            }
+        }
 
         public void AddLink(string source, string target, int value)
         {
@@ -223,6 +230,62 @@ namespace GraphWebProject
                     }
             }
             
+        }
+
+        public bool CheckIfCycles()
+        {
+            var color = new Dictionary<string, int>();
+            foreach (var node in nodes)
+            {
+                color.Add(node.id, 0);
+            }
+
+            if (nodes.Count > 0)
+            {
+                return dfs(nodes[0].id, nodes[0].id);
+            }
+            return false;
+            
+
+            bool dfs(string curNode, string prevNode)
+            {
+                color[curNode] = 1;
+                foreach (var connection in findLinkFromNode(curNode))
+                {
+                    if(connection == prevNode)
+                        continue;
+                    
+                    if (color[connection] == 0)
+                    {
+                        if (dfs(connection, curNode))
+                        {
+                            return true;
+                        }
+                    }
+                    else if(color[connection] == 1)
+                    {
+                        return true;
+                    }
+                }
+
+                color[curNode] = 2;
+                return false;
+            }
+
+            List<string> findLinkFromNode(string nodeId)
+            {
+                var listOfConnections = new List<string>();
+                foreach (var item in links.Select((value, i) => new { i, value }))
+                {
+                    if (item.value.source == nodeId)
+                        listOfConnections.Add(item.value.target);
+                    if(item.value.target == nodeId)
+                        listOfConnections.Add(item.value.source);
+                }
+
+                return listOfConnections;
+            }
+
         }
 
     }

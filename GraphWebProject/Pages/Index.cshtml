@@ -33,6 +33,7 @@
 <div class="row bg-light">
     <div class="col-8 graph-area">
         <svg id="svg-main" class="bg-white" width="90%" height="500px"></svg>
+        <button id="check-complete-graph-btn" type="button" disabled="true" class="btn btn-success">Check task</button>
         <button id="reset-btn" type="button"  class="btn btn-danger">Reset everything</button>
 
     </div>
@@ -89,9 +90,11 @@
                 </div>
             </div>
 
+         
+            
 
-            <button id="complete-graph-modal-btn" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#playModal">Complete Graph Task</button>
-            <button id="check-complete-graph-btn" type="button" disabled="true" class="btn btn-success btn-lg">Check task</button>
+            <button id="complete-graph-modal-btn" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#complete-graph-modal">Complete Graph</button>
+            <button id="cycle-graph-modal-btn" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#cycle-graph-modal">Cycles in Graph</button>
 
         </div>    
     </div>
@@ -100,7 +103,7 @@
 
 
 
-<div id="playModal" class="modal fade" role="dialog">
+<div id="complete-graph-modal" class="modal fade" role="dialog">
     <div class="modal-dialog">
 
         <div class="modal-content">
@@ -117,7 +120,27 @@
         </div>
 
     </div>
-</div>
+</div> 
+
+<div id="cycle-graph-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Task</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Remove cycles in given graph by deleting link(s).<br><a href="https://en.wikipedia.org/wiki/Cycle_(graph_theory)">Info about cycles in graphs</a></p>
+            </div>
+            <div class="modal-footer">
+                <button id="cycle-graph-btn" type="button" class="btn btn-success" data-dismiss="modal">Go</button>
+            </div>
+        </div>
+
+    </div>
+</div> 
+
 
 
 
@@ -127,6 +150,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="~/js/layout.js"></script>
+<script src="~/js/App.js"></script>
 
 </body>
 </html>

@@ -22,13 +22,19 @@ namespace GraphWebProject.Controllers
             return Json("");
         }
 
+        [HttpGet]
+        public JsonResult CheckForCycles()
+        {
+            return Json(Startup.MainGraph.CheckIfCycles());
+        }
+
         [HttpDelete]
         public IActionResult Reset()
         {
             try
             {
                 Startup.MainGraph.Reset();
-                Startup.Task = false;
+                Startup.Task = 0;
             }
             catch (Exception e)
             {
@@ -111,9 +117,9 @@ namespace GraphWebProject.Controllers
         }
 
         [HttpPost]
-        public IActionResult SetTask([FromBody]bool task)
+        public IActionResult SetTask([FromBody]int task)
         {
-            if (task == false)
+            if (task == 0)
             {
                 Startup.MainGraph.Reset();
             }
@@ -127,6 +133,21 @@ namespace GraphWebProject.Controllers
             try
             {
                 Startup.MainGraph.AddNodes(nodes);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return StatusCode(500);
+            }
+
+            return NoContent();
+        }
+        [HttpPost]
+        public IActionResult AddLinks([FromBody]Graph.Link[] links)
+        {
+            try
+            {
+                Startup.MainGraph.AddLinks(links);
             }
             catch (Exception e)
             {

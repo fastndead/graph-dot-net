@@ -60,6 +60,7 @@
             <e p="styles.css" t="Include" />
           </e>
           <e p="js" t="Include">
+            <e p="App.js" t="Include" />
             <e p="layout.js" t="Include" />
           </e>
           <e p="json" t="Include">
